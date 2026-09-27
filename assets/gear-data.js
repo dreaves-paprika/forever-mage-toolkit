@@ -255,7 +255,7 @@ function slots30(sp, fac) {
   const A = fac === "a";
   const L = [];
   L.push({ key: "head", label: "Head", opts: [set + "circ:tail", "embalmed", "cowl"],
-    why: { [set + "circ"]: "11 " + Sch + " damage and 10 Stamina, still the best hat you can make. The Filigreed version’s pattern hasn’t turned up yet.",
+    why: { [set + "circ"]: "11 " + Sch + " damage and 10 Stamina, still the best hat you can make. Where the Filigreed version’s pattern comes from isn’t confirmed yet.",
       embalmed: "8 spell damage, 12 Spirit and 7 Stamina: the best hat without Tailoring, if its rare is up when you run the Graveyard.",
       cowl: "10 Intellect and 5 spell power, and you can buy it: tailors make it." } });
   if (A) {
@@ -592,7 +592,7 @@ const WILDCARDS30 = [
 ];
 
 const LEFT_OUT20 = [
-  ["Filigreed gowns and leggings (Tailoring)", "Nobody has found the patterns in the beta yet. They’d be the best tailored chest and legs at 20.", "Filigreed Silky, Flame and Pearly Gown and Leggings"],
+  ["Filigreed gowns and leggings (Tailoring)", "They’d be the best tailored chest and legs at 20, but where their patterns come from isn’t confirmed yet. If you find one, it beats the picks above.", "Filigreed Silky, Flame and Pearly Gown and Leggings"],
   ["Novice Arcanist’s Sash (Tailoring)", "Its pattern hasn’t turned up in the beta yet.", "Novice Arcanist's Sash"],
   ["Plain Silky, Flame and Pearly gowns and leggings", "They need level 22 and 25.", "Silky Gown, Flame Leggings and the rest"],
   ["Blackfathom Villainy", "It ends at Twilight Lord Kelris, a level 27 boss.", "Gravestone Scepter"],
@@ -610,7 +610,7 @@ const LEFT_OUT20 = [
 ];
 const LEFT_OUT30 = [
   ["Excavation Site and City of Dalaran", "Both open with the level 30 cap, but nobody has published their loot yet.", ""],
-  ["Filigreed circlets (Tailoring)", "They’d beat the plain circlets, but nobody has found the patterns yet.", "Filigreed Silky, Flame and Pearly Circlet"],
+  ["Filigreed circlets (Tailoring)", "They’d beat the plain circlets, but where their patterns come from isn’t confirmed yet.", "Filigreed Silky, Flame and Pearly Circlet"],
   ["Scarlet Monastery Library and Armory bosses", "Their drops need level 31 or higher.", "Orb of the Forgotten Seer, Mantle of Doan, Hypnotic Blade"],
   ["Mage robe quests (Astral Knot and Nether-lace)", "Intellect, Spirit and Stamina but no spell power, so the robes above beat them. They’re on the checklist.", "Astral Knot Robe, Nether-lace Tunic"],
   ["Mage’s Wand (class quest)", "It opens at 30, but it’s a level 38–40 chain.", "Icefury Wand, Nether Force Wand, Ragefire Wand"],
