@@ -1,0 +1,1264 @@
+<!doctype html>
+<html lang="en" data-page="checklist">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mage Checklist</title>
+<meta name="description" content="Everything a Mage can train, unlock and quest for at the WoW Forever beta’s level cap, for every Alliance and Horde race, as a checklist that saves in your browser.">
+<meta property="og:title" content="Mage Checklist · Forever Mage Toolkit">
+<meta property="og:description" content="Everything a Mage can train, unlock and quest for at the WoW Forever beta’s level cap, for every Alliance and Horde race, as a checklist that saves in your browser.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#EDF0F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F141A" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;family=DM+Mono:wght@400;500&amp;family=Marcellus+SC&amp;display=swap">
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};window.mageTrack=window.mageTrack||function(){(window.mageTrackQ=window.mageTrackQ||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/assets/track.js"></script>
+<script src="/assets/site.js"></script>
+<script src="/assets/races.js"></script>
+<script src="/assets/notes.js"></script>
+<style>
+:root{color-scheme:light}html{-webkit-text-size-adjust:100%}[hidden]{display:none!important}
+:root{
+  --bg:#EDF0F3;
+  --surface:#FBFCFD;
+  --surface-2:#E4E9EE;
+  --ink:#15202B;
+  --ink-2:#465465;
+  --ink-3:#5E6C7B;
+  --line:#D2D9E1;
+  --line-strong:#A9B5C2;
+  --accent:#5B3CC4;
+  --accent-soft:#E8E2FA;
+  --on-color:#FFFFFF;
+  --arcane:#6A35B8;
+  --arcane-soft:#ECE3F8;
+  --fire:#B03A0C;
+  --fire-soft:#F7DFD2;
+  --frost:#0B6BA8;
+  --frost-soft:#D7EAF6;
+  --alliance:#2458B3;
+  --alliance-soft:#DDE7F8;
+  --horde:#A3262A;
+  --horde-soft:#F6DEDD;
+  --ok:#2C7A4B;
+  --warn:#9A5B00;
+  --focus:#5B3CC4;
+  --font-display:"Marcellus SC","Marcellus",Georgia,"Times New Roman",serif;
+  --font-body:"Alegreya Sans","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+  --font-mono:"DM Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0F141A;
+    --surface:#161D25;
+    --surface-2:#1E2731;
+    --ink:#E6EBF0;
+    --ink-2:#A5B1BE;
+    --ink-3:#8793A0;
+    --line:#28323D;
+    --line-strong:#3A4755;
+    --accent:#A993FF;
+    --accent-soft:#251F45;
+    --on-color:#0B1520;
+    --arcane:#C3A2FF;
+    --arcane-soft:#2B2144;
+    --fire:#FF8C57;
+    --fire-soft:#3B2319;
+    --frost:#5CC0F2;
+    --frost-soft:#12304A;
+    --alliance:#86AEF5;
+    --alliance-soft:#17274A;
+    --horde:#F08C8C;
+    --horde-soft:#3D1C1E;
+    --ok:#6FD39A;
+    --warn:#F2B35B;
+    --focus:#A993FF;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0F141A;
+  --surface:#161D25;
+  --surface-2:#1E2731;
+  --ink:#E6EBF0;
+  --ink-2:#A5B1BE;
+  --ink-3:#8793A0;
+  --line:#28323D;
+  --line-strong:#3A4755;
+  --accent:#A993FF;
+  --accent-soft:#251F45;
+  --on-color:#0B1520;
+  --arcane:#C3A2FF;
+  --arcane-soft:#2B2144;
+  --fire:#FF8C57;
+  --fire-soft:#3B2319;
+  --frost:#5CC0F2;
+  --frost-soft:#12304A;
+  --alliance:#86AEF5;
+  --alliance-soft:#17274A;
+  --horde:#F08C8C;
+  --horde-soft:#3D1C1E;
+  --ok:#6FD39A;
+  --warn:#F2B35B;
+  --focus:#A993FF;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:2px}
+button{font:inherit;color:inherit}
+:where(a,button,summary):focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:6px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+[data-el="arcane"]{--el:var(--arcane);--el-soft:var(--arcane-soft)}
+[data-el="fire"]{--el:var(--fire);--el-soft:var(--fire-soft)}
+[data-el="frost"]{--el:var(--frost);--el-soft:var(--frost-soft)}
+[data-el="a"]{--el:var(--alliance);--el-soft:var(--alliance-soft)}
+[data-el="h"]{--el:var(--horde);--el-soft:var(--horde-soft)}
+
+/* Layout */
+.shell{max-width:1200px;margin-inline:auto;padding-inline:clamp(16px,3vw,32px);padding-block:28px 72px;display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+.rail{display:contents}
+.sections{display:grid;gap:22px;min-width:0;container-type:inline-size}
+@media (min-width:960px){
+  .shell{grid-template-columns:292px minmax(0,1fr);column-gap:40px;align-items:start}
+  .rail{display:flex;flex-direction:column;gap:24px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 20px);max-height:calc(100vh - 40px);overflow-y:auto;padding-bottom:8px;scrollbar-width:thin}
+}
+
+/* Nameplate */
+.plate{display:grid;gap:14px}
+.eyebrow{margin:0;font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.plate h1{margin:0;font-family:var(--font-display);font-weight:400;font-size:clamp(32px,4vw,40px);line-height:1.04;letter-spacing:.005em;text-wrap:balance}
+.lede{margin:0;color:var(--ink-2);max-width:42ch}
+.sockets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.socket{display:grid;justify-items:center;align-content:start;gap:2px;padding:10px 4px 9px;min-width:0;border:1px dashed var(--line-strong);border-radius:12px;color:var(--ink-3);text-align:center;transition:background .2s,border-color .2s,color .2s}
+.socket svg{width:22px;height:22px;margin-bottom:2px}
+.socket-name{font-family:var(--font-display);font-size:14px;line-height:1.1;color:var(--ink-2);overflow-wrap:anywhere}
+.socket-state{font-family:var(--font-mono);font-size:11px;letter-spacing:.03em;text-transform:uppercase}
+.socket[data-has="1"]{border-style:solid;border-color:var(--el);background:var(--el-soft);color:var(--el)}
+.socket[data-has="1"] .socket-name{color:var(--el)}
+.socket[data-locked="1"]{border-style:dotted}
+/* In the narrow desktop rail (and on very small phones) the four teleports sit two by two. */
+@media (min-width:960px),(max-width:359.98px){
+  .sockets{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .socket{grid-template-columns:auto minmax(0,1fr);justify-items:start;align-items:center;column-gap:9px;row-gap:0;padding:8px 10px;text-align:left}
+  .socket svg{grid-row:1 / span 2;margin:0}
+}
+.overall{display:grid;gap:8px}
+.overall-line{margin:0;display:flex;align-items:baseline;gap:6px}
+.overall-num{font-family:var(--font-mono);font-size:28px;font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
+.overall-of{color:var(--ink-2);font-size:15px}
+.bar{display:block;height:6px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent);border-radius:inherit;transition:width .25s ease}
+.status{margin:0;display:flex;gap:9px;align-items:flex-start;font-size:14px;line-height:1.4;color:var(--ink-2)}
+.status::before{content:"";flex:none;width:8px;height:8px;margin-top:5px;border-radius:50%;background:var(--ok)}
+.status[data-tone="busy"]::before{background:var(--accent)}
+.status[data-tone="warn"]::before{background:var(--warn)}
+.status[data-tone="off"]::before{background:var(--line-strong)}
+.switch{position:relative;display:inline-flex;align-items:center;gap:10px;font-size:14.5px;color:var(--ink-2);cursor:pointer;user-select:none;width:max-content;max-width:100%}
+.switch input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.switch-track{position:relative;flex:none;width:34px;height:20px;border-radius:99px;background:var(--surface-2);border:1px solid var(--line-strong);transition:background .15s,border-color .15s}
+.switch-track::after{content:"";position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;background:var(--ink-3);transition:transform .15s,background .15s}
+.switch input:checked + .switch-track{background:var(--accent);border-color:var(--accent)}
+.switch input:checked + .switch-track::after{transform:translateX(14px);background:var(--on-color)}
+.switch input:focus-visible + .switch-track{outline:2px solid var(--focus);outline-offset:2px}
+
+/* Section list */
+.toc ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.toc-link{--c:var(--accent);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 12px;align-items:baseline;padding:9px 10px;border-radius:10px;color:var(--ink);text-decoration:none}
+.toc-link[data-el]{--c:var(--el)}
+.toc-link:hover{background:var(--surface-2)}
+.toc-name{font-size:15.5px;line-height:1.3}
+.toc-short{display:none}
+.toc-count{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.toc-bar{grid-column:1 / -1;height:4px}
+.toc-bar i{background:var(--c)}
+@media (max-width:959.98px){
+  .toc{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;margin-inline:calc(-1 * clamp(16px,3vw,32px));padding:8px clamp(16px,3vw,32px);background:var(--bg);background:color-mix(in srgb,var(--bg) 92%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .toc ul{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+  .toc ul::-webkit-scrollbar{display:none}
+  .toc li{flex:none}
+  .toc-link{display:flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+  .toc-long,.toc-bar{display:none}
+  .toc-short{display:inline}
+  .toc-name{font-size:14.5px;white-space:nowrap}
+}
+
+/* Panels */
+.panel{--sec:var(--accent);--sec-soft:var(--accent-soft);background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;scroll-margin-top:calc(env(safe-area-inset-top,0px) + 76px)}
+.panel[data-el]{--sec:var(--el);--sec-soft:var(--el-soft)}
+.panel-head{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.glyph{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--sec-soft);color:var(--sec)}
+.glyph svg{width:20px;height:20px}
+.panel-head h2{margin:0;font-family:var(--font-display);font-weight:400;font-size:23px;line-height:1.15;text-wrap:balance}
+.panel-count{font-family:var(--font-mono);font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums;padding:4px 9px;border-radius:99px;background:var(--surface-2)}
+.panel-intro{margin:16px 20px 0;color:var(--ink-2);max-width:68ch}
+.panel-where{display:flex;flex-wrap:wrap;gap:8px;margin:12px 20px 0}
+.tips{margin:14px 20px 0;padding:12px 16px 12px 34px;border-radius:12px;background:var(--sec-soft);font-size:15px;line-height:1.45;display:grid;gap:6px}
+.tips li::marker{color:var(--sec)}
+.tips-after{margin-bottom:20px}
+.group-title{margin:22px 20px 2px;font-family:var(--font-mono);font-weight:500;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.group-hint{margin:2px 20px 0;font-size:14.5px;color:var(--ink-2)}
+.footnote{margin:4px 20px 20px;font-size:14px;color:var(--ink-2);max-width:72ch}
+
+/* Checklist rows */
+.items{list-style:none;margin:8px 0 0;padding:0 8px 8px}
+.item{display:grid;grid-template-columns:22px minmax(0,1fr);column-gap:14px;row-gap:8px;padding:13px 12px;border-top:1px solid var(--line)}
+.item:first-child{border-top:0}
+.tick{appearance:none;-webkit-appearance:none;margin:1px 0 0;width:22px;height:22px;border-radius:6px;border:1.5px solid var(--line-strong);background:var(--surface);display:grid;place-content:center;cursor:pointer;transition:background .12s,border-color .12s}
+.tick::after{content:"";width:11px;height:6px;border-left:2.5px solid var(--on-color);border-bottom:2.5px solid var(--on-color);transform:translateY(-1px) rotate(-45deg) scale(0);transition:transform .12s ease}
+.tick:hover{border-color:var(--sec)}
+.tick:checked{background:var(--sec);border-color:var(--sec)}
+.item[data-el] .tick:checked{background:var(--el);border-color:var(--el)}
+.tick:checked::after{transform:translateY(-1px) rotate(-45deg) scale(1)}
+.tick:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.item-body{display:grid;gap:3px;min-width:0;cursor:pointer}
+.item-head{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px}
+.item-title{font-weight:500;font-size:16.5px;line-height:1.3}
+.item-note{display:block;color:var(--ink-2);font-size:15px;line-height:1.45;max-width:68ch}
+.item-note a{color:var(--sec)}
+.item.is-done .item-title{color:var(--ink-3);text-decoration:line-through;text-decoration-thickness:1.5px;text-decoration-color:var(--line-strong)}
+.item.is-done .item-note{color:var(--ink-3)}
+.item-meta{grid-column:2;display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start}
+.where-text{font-size:13.5px;line-height:1.35;color:var(--ink-2)}
+.step-num{display:inline-grid;place-items:center;min-width:24px;height:22px;padding:0 6px;border-radius:99px;background:var(--sec-soft);color:var(--sec);font-family:var(--font-mono);font-size:12px;font-weight:500;font-variant-numeric:tabular-nums}
+.item.is-info .item-body{cursor:default}
+.info-mark{width:22px;height:22px;border-radius:6px;border:1.5px dashed var(--line-strong);display:grid;place-items:center;color:var(--ink-3);font-family:var(--font-mono);font-size:13px;line-height:1}
+.chip{display:inline-flex;align-items:center;font-family:var(--font-mono);font-size:11.5px;line-height:1;padding:4px 7px;border-radius:99px;border:1px solid var(--line);color:var(--ink-2);white-space:nowrap;font-variant-numeric:tabular-nums}
+.chip-new{border-color:transparent;background:var(--accent-soft);color:var(--accent)}
+.chip-el{border-color:transparent;background:var(--el-soft);color:var(--el)}
+.chip-opt{border-style:dashed}
+.coord{display:inline-flex;align-items:baseline;gap:6px;padding:5px 9px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-family:var(--font-mono);font-size:12.5px;line-height:1.2;color:var(--ink-3);cursor:pointer;white-space:nowrap;transition:border-color .12s,color .12s}
+.coord:hover{border-color:var(--sec);color:var(--ink-2)}
+.coord-xy{color:var(--ink);font-weight:500}
+#app[data-hide-done="1"] .item.is-done{display:none}
+
+/* Catch-up quests */
+.steps{grid-column:2;margin:4px 0 2px;padding:0;list-style:none;counter-reset:step;display:grid;gap:10px}
+.steps li{counter-increment:step;display:grid;grid-template-columns:22px minmax(0,1fr);column-gap:10px;row-gap:6px;font-size:15px;line-height:1.45;color:var(--ink-2)}
+.steps li::before{content:counter(step);display:grid;place-items:center;width:22px;height:22px;border-radius:99px;background:var(--el-soft);color:var(--el);font-family:var(--font-mono);font-size:12px;font-weight:500}
+.step-where{grid-column:2;display:flex;flex-wrap:wrap;gap:6px}
+.quest.is-done .steps{display:none}
+.next-note{display:flex;gap:10px;align-items:flex-start;margin:6px 20px 20px;padding:12px 14px;border:1px dotted var(--line-strong);border-radius:12px;color:var(--ink-2);font-size:15px;line-height:1.45}
+.next-note svg{flex:none;width:20px;height:20px;color:var(--accent);margin-top:1px}
+
+/* Talents */
+.spec{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;margin:16px 20px 0;padding:0;border:0;min-width:0}
+.seg{position:relative;display:block;cursor:pointer}
+.seg input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.seg-body{display:grid;gap:2px;height:100%;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);transition:background .12s,border-color .12s}
+.seg-name{font-family:var(--font-display);font-size:17px;line-height:1.15}
+.seg-use{font-size:13.5px;color:var(--ink-2)}
+.seg:hover .seg-body{border-color:var(--line-strong)}
+.seg input:checked + .seg-body{border-color:var(--accent);background:var(--accent-soft)}
+.seg input:focus-visible + .seg-body{outline:2px solid var(--focus);outline-offset:2px}
+.build-blurb{margin:14px 20px 0;color:var(--ink-2);max-width:68ch}
+.build{list-style:none;margin:10px 20px 0;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.build li{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:3px 12px;align-items:baseline;padding:10px 14px;border-top:1px solid var(--line)}
+.build li:first-child{border-top:0}
+.build-name{font-weight:500}
+.build-pts{font-family:var(--font-mono);font-size:13.5px;font-weight:500;color:var(--accent);font-variant-numeric:tabular-nums}
+.build-row{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3)}
+.build-fx{grid-column:1 / -1;color:var(--ink-2);font-size:14.5px}
+.build-src{margin:8px 20px 0;font-size:13px;color:var(--ink-3)}
+
+/* Rotation cards */
+.sets{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin:10px 20px 0}
+.set{display:grid;gap:8px;align-content:start;padding:12px 14px;border:1px solid var(--line);border-radius:12px}
+.set-name{margin:0;font-family:var(--font-display);font-size:16px;color:var(--el,var(--ink))}
+.set-slots{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:14.5px}
+.set-slots li{display:grid;grid-template-columns:62px minmax(0,1fr);gap:8px;align-items:baseline}
+.slot-el{font-family:var(--font-mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--el)}
+.slot-empty{color:var(--ink-3)}
+.set-note{margin:0;font-size:13.5px;color:var(--ink-2)}
+
+/* Level 30 preview */
+.next-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin:16px 20px 20px}
+.lvl{padding:12px 14px;border:1px dashed var(--line-strong);border-radius:12px}
+.lvl-num{margin:0 0 6px;font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.lvl ul{margin:0;padding-left:18px;display:grid;gap:3px;font-size:14.5px;line-height:1.4;color:var(--ink-2)}
+
+@container (min-width:480px){
+  .spec{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .next-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@container (min-width:620px){
+  .item{grid-template-columns:22px minmax(0,1fr) auto}
+  .item-meta{grid-column:auto;justify-content:flex-end;max-width:260px}
+  .item-meta .where-text{text-align:right}
+  .quest .steps,.item .steps{grid-column:2 / -1}
+  .build li{grid-template-columns:minmax(0,1.1fr) auto 64px minmax(0,2fr)}
+  .build-fx{grid-column:auto}
+  .sets{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@container (min-width:720px){
+  .next-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+
+/* Footer, toast */
+.foot{display:grid;gap:10px;padding:6px 4px 0;font-size:14.5px;color:var(--ink-2)}
+.foot p{margin:0;max-width:72ch}
+.foot .group-title{margin:10px 0 0}
+.sources{margin:0;padding-left:18px;display:grid;gap:4px}
+.sources span{color:var(--ink-3)}
+.reset-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:10px}
+.reset{padding:8px 14px;border-radius:10px;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);cursor:pointer}
+.reset:hover{border-color:var(--fire);color:var(--fire)}
+.reset.armed{border-color:var(--fire);background:var(--fire-soft);color:var(--fire)}
+.toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;display:flex;flex-wrap:wrap;align-items:center;gap:10px;max-width:calc(100vw - 32px);padding:10px 14px;border-radius:12px;background:var(--ink);color:var(--bg);font-size:14.5px;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.toast input{width:280px;max-width:100%;padding:6px 8px;border-radius:8px;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);font-family:var(--font-mono);font-size:13px}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+.lvlbar{display:inline-grid;grid-auto-flow:column;grid-auto-columns:1fr;width:max-content;padding:3px;border:1px solid var(--line-strong);border-radius:99px;background:var(--surface)}
+.lvlopt{position:relative;cursor:pointer}
+.lvlopt input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.lvlopt span{display:block;padding:5px 14px;border-radius:99px;font-family:var(--font-mono);font-size:12.5px;letter-spacing:.04em;color:var(--ink-2);white-space:nowrap;transition:background .12s,color .12s}
+.lvlopt input:checked + span{background:var(--accent);color:var(--on-color,#fff)}
+.lvlopt input:focus-visible + span{outline:2px solid var(--focus);outline-offset:2px}
+.preview-note{margin:0;font-size:13.5px;color:var(--warn,#9A5B00)}
+.companion{margin:0;font-size:14.5px;color:var(--ink-2)}
+.whoami{margin-top:4px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);font-size:15px}
+.whoami:empty{display:none}
+.plate .rp{margin-top:2px}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+(() => {
+"use strict";
+
+const SITE = window.SITE || { level: () => 20, levels: () => [20], setLevel: () => {}, onChange: () => {}, preview: false, race: () => "human", faction: () => "a", RACES: { human: { name: "Human", fac: "a" } } };
+
+const HIDE_KEY = "forever-mage:hide-done";
+const EL_NAME = { arcane: "Arcane", fire: "Fire", frost: "Frost" };
+const GLYPH = {
+  bolt: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M11.6 1.8 4.2 11h5l-1.1 7.2L15.8 9h-5.1l.9-7.2z" fill="currentColor"/></svg>',
+  arcane: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.8l1.9 6.3 6.3 1.9-6.3 1.9L10 18.2l-1.9-6.3L1.8 10l6.3-1.9z" fill="currentColor"/></svg>',
+  fire: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10.2 1.6c.5 3 4.8 4.6 4.8 9.4a5 5 0 0 1-10 0c0-2 1-3.5 2.2-4.5.1 1.7.9 2.6 2 3.1-.4-2.8-.1-5.5 1-8z" fill="currentColor"/></svg>',
+  frost: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5v17M2.6 5.75l14.8 8.5M2.6 14.25l14.8-8.5M7.6 2.9 10 5.2l2.4-2.3M7.6 17.1 10 14.8l2.4 2.3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  portal: '<svg viewBox="0 0 20 20" aria-hidden="true"><ellipse cx="10" cy="10" rx="5.6" ry="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 5.6c1.9 1.2 2.6 3 2 4.8-.5 1.4-1.9 2.3-3.3 2-1.2-.3-1.8-1.5-1.4-2.6.3-.9 1.3-1.3 2.1-.9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
+  scroll: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2.5h8l2.5 2.5v12.5H5zM8 7.5h5M8 10.5h5M8 13.5h3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  crest: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.8 3.5 4.3v5.1c0 4 2.8 7.1 6.5 8.8 3.7-1.7 6.5-4.8 6.5-8.8V4.3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 6v7M6.8 9.4h6.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>',
+  rune: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v16M5 5.5l10 9M15 5.5l-10 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  bar: '<svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="7" width="4.4" height="6" rx="1.2" fill="currentColor"/><rect x="7.8" y="7" width="4.4" height="6" rx="1.2" fill="currentColor"/><rect x="13.6" y="7" width="4.4" height="6" rx="1.2" fill="currentColor"/></svg>',
+  staff: '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="14.2" cy="5.8" r="2.9" fill="currentColor"/><path d="m12.1 7.9-9 9" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg>',
+  next: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16.5v-12M5 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+};
+
+/* ---------- places ---------- */
+const CITY = {
+  stormwind: { name: "Stormwind", trainer: { label: "Jennea Cannon", zone: "Stormwind City", x: "49.6", y: "85.8" }, trainerName: "Jennea Cannon",
+    place: "the Wizard’s Sanctum in Stormwind’s Mage Quarter (the trainers are at the top of the tower, through the portal)",
+    portal: { label: "Larimaine Purdue", zone: "Stormwind City", x: "50.4", y: "86.0" }, portalNote: "From Larimaine Purdue, the portal trainer beside the mage trainers at the top of the Wizard’s Sanctum.",
+    reagent: { label: "Owen Vaughn", zone: "Stormwind City", x: "47.4", y: "82.5" },
+    weapon: "Woo Ping in Stormwind’s Trade District teaches Daggers, One-Handed Swords and Staves" },
+  ironforge: { name: "Ironforge", trainer: { label: "Bink", zone: "Ironforge", x: "27.2", y: "8.3" }, trainerName: "Bink",
+    place: "the Hall of Mysteries in Ironforge’s Mystic Ward",
+    portal: { label: "Milstaff Stormeye", zone: "Ironforge", x: "25.5", y: "7.1" }, portalNote: "From Milstaff Stormeye, the portal trainer in the Hall of Mysteries.",
+    reagent: { label: "Ginny Longberry", zone: "Ironforge", x: "31.3", y: "27.8" },
+    weapon: "Bixi Wobblebonk in Ironforge’s Hall of Arms teaches Daggers" },
+  orgrimmar: { name: "Orgrimmar", trainer: { label: "Deino", zone: "Orgrimmar", x: "38.4", y: "86.1" }, trainerName: "Deino",
+    place: "the Darkbriar Lodge in Orgrimmar’s Valley of Spirits",
+    portal: { label: "Thuul", zone: "Orgrimmar", x: "38.7", y: "85.4" }, portalNote: "From Thuul, the portal trainer upstairs in the Darkbriar Lodge.",
+    reagent: { label: "Horthus", zone: "Orgrimmar", x: "45.4", y: "56.5" },
+    weapon: "Sayoc in Orgrimmar’s Valley of Honor teaches Daggers and Staves" },
+  undercity: { name: "Undercity", trainer: { label: "Anastasia Hartwell", zone: "Undercity", x: "85.1", y: "10.0" }, trainerName: "Anastasia Hartwell",
+    place: "Undercity’s Magic Quarter",
+    portal: { label: "Lexington Mortaim", zone: "Undercity", x: "84.2", y: "15.6" }, portalNote: "From Lexington Mortaim, the portal trainer in the Magic Quarter.",
+    reagent: { label: "Hannah Akeley", zone: "Undercity", x: "82.8", y: "15.8" },
+    weapon: "Archibald in Undercity’s War Quarter teaches Daggers and One-Handed Swords" }
+};
+const HOME = { human: "stormwind", skyborne: "stormwind", gnome: "ironforge", orc: "orgrimmar", troll: "orgrimmar", undead: "undercity" };
+const JENNEA = { label: "Jennea Cannon", zone: "Stormwind City", x: "49.6", y: "85.8" };
+const ANASTASIA = { label: "Anastasia Hartwell", zone: "Undercity", x: "85.1", y: "10.0" };
+
+/* Teleports, by faction. letter is what the party board and stats record. */
+const TP = {
+  a: [
+    { id: "tp-sw", city: "stormwind", name: "Teleport: Stormwind", short: "Stormwind", lvl: 20, letter: "s" },
+    { id: "tp-if", city: "ironforge", name: "Teleport: Ironforge", short: "Ironforge", lvl: 20, letter: "i" },
+    { id: "tp-darn", name: "Teleport: Darnassus", short: "Darnassus", lvl: 30, letter: "d", where: { label: "Elissa Dumas", zone: "Darnassus", x: "40.6", y: "82.1" },
+      note: "From Elissa Dumas near the Temple of the Moon. New in Forever, a ship sails from Stormwind Harbor straight to Auberdine; from there take the boat to Rut’theran Village and the portal up." }
+  ],
+  h: [
+    { id: "tp-org", city: "orgrimmar", name: "Teleport: Orgrimmar", short: "Orgrimmar", lvl: 20, letter: "o" },
+    { id: "tp-uc", city: "undercity", name: "Teleport: Undercity", short: "Undercity", lvl: 20, letter: "u" },
+    { id: "tp-tb", name: "Teleport: Thunder Bluff", short: "Thunder Bluff", lvl: 30, letter: "t", where: { label: "Birgitte Cranston", zone: "Thunder Bluff", x: "22.5", y: "16.9" },
+      note: "From Birgitte Cranston on Spirit Rise. Thunder Bluff is a ride south from the Crossroads through the Barrens and into Mulgore." }
+  ]
+};
+const TP_LETTER = {};
+Object.keys(TP).forEach((f) => TP[f].forEach((t) => { TP_LETTER[t.id] = t.letter; }));
+
+/* ---------- racials ---------- */
+const RACIALS = {
+  human: [
+    { name: "Will to Survive", active: true, cd: "3 min", tag: "new", fx: "Removes every stun on you.", tip: "Your stun breaker: use it, then Blink or Frost Nova out." },
+    { name: "Perception", active: true, cd: "3 min", fx: "Much better stealth detection for 20 seconds.", tip: "Spots sneaking rogues and druids. Rarely matters while questing." },
+    { name: "Sword Specialization", tag: "changed", fx: "+2% crit chance on spells and attacks while a sword is equipped.", tip: "A one-handed sword and an off hand count; a staff doesn’t. Learn One-Handed Swords from Woo Ping if you find a good caster sword." },
+    { name: "The Human Spirit", fx: "+5% Spirit.", tip: "A little more mana regeneration between pulls." }
+  ],
+  gnome: [
+    { name: "Escape Artist", active: true, cd: "2 min", tag: "changed", fx: "Breaks roots and slows, and makes you immune to them for 3 seconds.", tip: "Break a root, run, then turn and cast." },
+    { name: "Eureka!", active: true, cd: "2 min", tag: "new", fx: "Your next 3 damaging spells within 15 seconds cost 10% less mana and deal 10% more damage.", tip: "Press it before your three biggest spells. The Sept 24 patch cut its mana saving from 50% to 10%." },
+    { name: "Expansive Mind", tag: "changed", fx: "+5% maximum mana.", tip: "A slightly bigger mana bar, so you drink a little less often." },
+    { name: "Engineering Specialization", fx: "Engineering devices fail 20% less often.", tip: "Only matters if you take Engineering." }
+  ],
+  skyborne: [
+    { name: "Walk on Air", active: true, cd: "2 min", tag: "new", fx: "Glide down for 10 seconds, steering as you go.", tip: "A free Slow Fall: take cliffs as shortcuts." },
+    { name: "Read Ley Line", active: true, cd: "2 min", tag: "new", fx: "Doubles your health and mana regeneration: for 15 minutes on a ley line, or 15 seconds anywhere else.", tip: "Cast it out of combat on a ley line (purple on your map and minimap) before a long session." },
+    { name: "Wind Blessed", tag: "new", fx: "+1% haste on spells and attacks.", tip: "Your spells cast a little faster, always." },
+    { name: "Elemental Insight", tag: "new", fx: "+5% damage to elementals.", tip: "Handy in zones full of elementals." }
+  ],
+  orc: [
+    { name: "Blood Fury", active: true, cd: "2 min", tag: "changed", fx: "+10% attack power and spell power for 15 seconds.", tip: "Save it for a tough pull. It grows with your gear’s spell power." },
+    { name: "Shatter Curse", active: true, cd: "3 min", tag: "new", fx: "Removes and blocks curses and banes, and cuts magic damage you take by 15% for 8 seconds.", tip: "Pop it against warlocks and caster mobs." },
+    { name: "Axe Specialization", tag: "changed", fx: "+1% crit chance while an axe is equipped.", tip: "Does nothing for a mage: mages can’t use axes." },
+    { name: "Hardiness", tag: "changed", fx: "Stuns on you last 20% less.", tip: "Stuns wear off a bit sooner." }
+  ],
+  undead: [
+    { name: "Will of the Forsaken", active: true, cd: "2 min", tag: "changed", fx: "Removes charm, fear and sleep effects.", tip: "Breaks fears so you can keep casting. It no longer leaves you immune afterward." },
+    { name: "Cannibalize", active: true, cd: "2 min", tag: "changed", fx: "Eat a humanoid or undead corpse to restore 35% of your health and mana over 10 seconds.", tip: "It restores mana in Forever, so it saves a drink after most fights." },
+    { name: "Underwater Breathing", fx: "Your breath lasts 300% longer underwater.", tip: "More time for underwater quest objectives." },
+    { name: "Touch of the Grave", tag: "new", fx: "Your damaging spells have a 10% chance to drain a little health, up to 5% of your maximum.", tip: "Free healing while you nuke. Since Sept 24 it can’t break your Polymorph." }
+  ],
+  troll: [
+    { name: "Berserking", active: true, cd: "3 min", tag: "changed", fx: "+10% casting and attack speed for 10 seconds.", tip: "Faster casts for a tough pull." },
+    { name: "Rapid Regeneration", active: true, cd: "3 min", tag: "new", fx: "Regenerate 50% of your health over 6 seconds. Moving, acting or taking damage cancels it.", tip: "Refills health between pulls. It doesn’t restore mana." },
+    { name: "Beast Slaying", fx: "+5% damage to beasts.", tip: "More damage to wolves, boars, spiders and other beasts." },
+    { name: "Regeneration", tag: "changed", fx: "Health regenerates 10% faster, and 10% of it keeps going in combat.", tip: "A small safety net while you solo." }
+  ]
+};
+
+/* ---------- mage class quests ---------- */
+const Q10 = {
+  human: { id: "cq-10", el: "arcane", name: "Mirror Lake", sub: "Mage quest · level 10", reward: "Ley Staff or Ley Orb", steps: [
+    { t: "Any mage trainer offers Speak with Jennea at 10. Zaldimar Wefhellt is in the Lion’s Pride Inn, Goldshire.", where: [{ label: "Zaldimar", zone: "Elwynn Forest", x: "43.2", y: "66.2" }] },
+    { t: "Talk to Jennea Cannon at the top of the Wizard’s Sanctum in Stormwind’s Mage Quarter; step through the portal at the top of the tower.", where: [JENNEA] },
+    { t: "Head southwest out of the city to the Mirror Lake waterfall and use her flask at its base.", where: [{ label: "Waterfall", zone: "Elwynn Forest", x: "32.1", y: "58.2" }] },
+    { t: "Bring the sample back to Jennea." }
+  ] },
+  gnome: { id: "cq-10", el: "arcane", name: "Mage-tastic Gizmonitor", sub: "Mage quest · level 10", reward: "Arcane Staff or Arcane Orb", note: "It’s in Forever’s quest data, but no beta route guide has confirmed it yet.", steps: [
+    { t: "Magis Sparkmantle in Kharanos offers Speak with Bink at 10.", where: [{ label: "Magis", zone: "Dun Morogh", x: "47.5", y: "52.1" }] },
+    { t: "Talk to Bink in the Hall of Mysteries, Ironforge.", where: [{ label: "Bink", zone: "Ironforge", x: "27.2", y: "8.3" }] },
+    { t: "Find the Mage-tastic Gizmonitor in a grey toolbox under a table in the hut with the lift, north of Gnomeregan.", where: [{ label: "Toolbox (rough)", zone: "Dun Morogh", x: "27.0", y: "36.0" }] },
+    { t: "Bring it back to Bink." }
+  ] },
+  troll: { id: "cq-10", el: "arcane", name: "Ju-Ju Heaps", sub: "Mage quest · level 10", reward: "Ley Staff or Ley Orb", note: "It’s in Forever’s quest data, but no beta route guide has confirmed it yet.", steps: [
+    { t: "A mage trainer offers Speak with Un’thuwa at 10. Un’Thuwa is in Sen’jin Village.", where: [{ label: "Un'Thuwa", zone: "Durotar", x: "56.3", y: "75.1" }] },
+    { t: "Destroy 4 Ju-Ju Heaps on the main Echo Isle. The ones you can click are inside the huts, not the skull piles outside." },
+    { t: "Return to Un’Thuwa." }
+  ] },
+  undead: { id: "cq-10", el: "arcane", name: "The Balnir Farmstead", sub: "Mage quest · level 10", reward: "Arcane Staff or Arcane Orb", note: "It’s in Forever’s quest data, but no beta route guide has confirmed it yet.", steps: [
+    { t: "A mage trainer offers Speak with Anastasia at 10. She’s in Undercity’s Magic Quarter.", where: [ANASTASIA] },
+    { t: "Pick Balnir Snapdragons in the garden of the Balnir Farmstead, eastern Tirisfal Glades.", where: [{ label: "Garden (rough)", zone: "Tirisfal Glades", x: "77.0", y: "62.0" }] },
+    { t: "Bring them back to Anastasia." }
+  ] },
+  orc: { info: true, id: "cq-10-none", name: "No level 10 mage quest confirmed for Orcs", noteHTML: "Orc mages are new in Forever. So far only their level 1 quest, Glyphic Parchment, is confirmed. At 10, ask Un’Thuwa in Sen’jin Village in case the Troll quest is open to you." },
+  skyborne: { info: true, id: "cq-10-none", name: "No level 10 mage quest known for Skyborne", noteHTML: "Your mage story starts with A Student of the Arcane on Zephras Isle. Nothing later has been found for Skyborne mages yet." }
+};
+const Q15 = {
+  a: { id: "cq-15", el: "arcane", name: "Manaweave Robe", sub: "Mage quest · level 15", reward: "Manaweave Robe (+6 Intellect)", steps: [
+    { t: "At 15, talk to Jennea Cannon at the top of the Wizard’s Sanctum.", where: [JENNEA] },
+    { t: "Investigate the Blue Recluse: in the Blue Recluse tavern in the Mage Quarter, read the Cantation to reveal Rift Spawn, beat each one until it’s stunned, and capture it in a coffer. Fill 3; the basement spawns them one at a time." },
+    { t: "Gathering Materials: bring 10 Linen Cloth and 6 Charged Rift Gems from the stacked crates in Silver Stream Mine, Loch Modan.", where: [{ label: "Mine (rough)", zone: "Loch Modan", x: "35.0", y: "18.0" }] },
+    { t: "Hand everything to Wynne Larson at Larson Clothiers for the robe.", where: [{ label: "Wynne Larson", zone: "Stormwind City", x: "51.8", y: "83.5" }] }
+  ] },
+  h: { id: "cq-15", el: "arcane", name: "Spellfire Robes", sub: "Mage quest · level 15", reward: "Lesser Spellfire Robes (+6 Intellect)", steps: [
+    { t: "At 15, talk to Anastasia Hartwell in Undercity’s Magic Quarter. Orcs and Trolls take the zeppelin from the tower outside Orgrimmar to Tirisfal Glades.", where: [ANASTASIA] },
+    { t: "Investigate the Alchemist Shop: in Algernon’s shop in the Apothecarium, reveal the invisible creatures, subdue them and capture 3 in the coffers.", where: [{ label: "Algernon", zone: "Undercity", x: "51.7", y: "74.7" }] },
+    { t: "Gathering Materials: bring 10 Linen Cloth and 6 Dalaran Mana Gems from the Dalaran mages near Ambermill, Silverpine Forest.", where: [{ label: "Ambermill (rough)", zone: "Silverpine Forest", x: "55.0", y: "65.0" }] },
+    { t: "Turn it all in to Josef Gregorian, the tailor in the Magic Quarter.", where: [{ label: "Josef Gregorian", zone: "Undercity", x: "70.8", y: "30.7" }] }
+  ] }
+};
+const Q26 = {
+  a: { id: "cq-26", el: "arcane", name: "Astral Knot Garment", sub: "Mage quest · level 26", reward: "Astral Knot Robe or Blouse (Intellect, Spirit and Stamina)", note: "In Forever’s quest data but not seen yet, since the beta cap has been 20. The robes have no spell power, so the gear guide’s picks beat them.", steps: [
+    { t: "At 26, High Sorcerer Andromath at the top of the Wizard’s Sanctum starts it.", where: [JENNEA] },
+    { t: "Ur’s Treatise on Shadow Magic: fetch the book from the Tower of Ilgalar in Redridge Mountains." },
+    { t: "Pristine Spider Silk: collect 8 from Carrion Recluses at Raven Hill Cemetery, Duskwood." },
+    { t: "Take the silk to Wynne Larson at Larson Clothiers.", where: [{ label: "Wynne Larson", zone: "Stormwind City", x: "51.8", y: "83.5" }] }
+  ] },
+  h: { id: "cq-26", el: "arcane", name: "Nether-lace Garment", sub: "Mage quest · level 26", reward: "Nether-lace Robe or Tunic (Intellect, Spirit and Stamina)", note: "In Forever’s quest data but not seen yet, since the beta cap has been 20. The robes have no spell power, so the gear guide’s picks beat them.", steps: [
+    { t: "At 26, Undercity’s mage trainers offer Speak with Deino, who is in Orgrimmar’s Darkbriar Lodge. Orcs and Trolls may be able to skip that step and go straight there.", where: [{ label: "Deino", zone: "Orgrimmar", x: "38.4", y: "86.1" }] },
+    { t: "Waters of Xavian: stand under the highest waterfall at Xavian in eastern Ashenvale and use Deino’s flask.", where: [{ label: "Waterfall (rough)", zone: "Ashenvale", x: "76.3", y: "41.6" }] },
+    { t: "Laughing Sisters: collect 12 Laughing Sister’s Hair from the dryads near Raynewood Retreat.", where: [{ label: "Raynewood (rough)", zone: "Ashenvale", x: "58.0", y: "50.0" }] },
+    { t: "Turn it in to Kil’hala, the tailor at the Crossroads.", where: [{ label: "Kil'hala", zone: "The Barrens", x: "52.2", y: "31.7" }] }
+  ] }
+};
+const Q30 = { id: "cq-30", el: "arcane", name: "Journey to the Marsh", sub: "Mage quest · from level 30", reward: "at the end, the Icefury, Ragefire or Nether Force Wand", opt: true, steps: [
+  { t: "At 30, your capital’s mage trainers offer Journey to the Marsh." },
+  { t: "It leads to Tabetha in Dustwallow Marsh, west of Theramore.", where: [{ label: "Tabetha (rough)", zone: "Dustwallow Marsh", x: "46.0", y: "57.0" }] },
+  { t: "The rest of the chain is level 38 to 40 work, including a book from the Scarlet Monastery Library, so pick it up now and finish it later." }
+] };
+
+/* ---------- builds (Forever talent trees) ---------- */
+const BUILDS20 = {
+  arcane: { label: "Arcane", use: "Wand leveling", el: "arcane", src: "Icy Veins’ Arcane guide; Wowhead’s level 20 guide uses the same points", blurb: "Let your wand kill most mobs so you drink less, and open tough fights with Arcane Blast. Arcane Subtlety keeps your Arcane Explosions from pulling mobs off the tank.", rows: [
+    { n: "Wand Specialization", row: 1, pts: "2/2", fx: "+25% wand damage" },
+    { n: "Arcane Focus", row: 1, pts: "3/5", fx: "+3% hit with Arcane spells" },
+    { n: "Arcane Subtlety", row: 2, pts: "2/2", fx: "Less threat from Arcane spells, lower enemy resistances" },
+    { n: "Arcane Concentration", row: 2, pts: "3/5", fx: "A 6% chance after each damage spell to make the next one free" },
+    { n: "Arcane Blast", row: 3, pts: "1/1", fx: "Teaches Arcane Blast: each cast makes your spells hit harder but the next Blast costs more" }
+  ] },
+  fire: { label: "Fire", use: "Solo questing", el: "fire", src: "Icy Veins’ Fire guide", blurb: "Faster Fireballs, a Pyroblast opener, and a Fire Blast that’s likelier to crit after every kill. Guides call Fire the weakest spec until Hot Streak at 25.", rows: [
+    { n: "Improved Fireball", row: 1, pts: "5/5", fx: "Fireball casts 0.5 seconds faster" },
+    { n: "Wake of Fire", row: 1, pts: "2/2", fx: "Shorter Fire Blast cooldown; after a kill, your next Fire Blast is likelier to crit" },
+    { n: "Ignite", row: 2, pts: "3/5", fx: "Fire crits leave a burn worth 24% of the hit" },
+    { n: "Pyroblast", row: 3, pts: "1/1", fx: "Teaches Pyroblast, a big opener from range" }
+  ] },
+  frost: { label: "Frost", use: "Safe leveling", el: "frost", src: "Icy Veins’ Frost guide; WoWForeverBuilds publishes the same points", blurb: "Throw Frostbolts from range. When Frostbite or Frost Nova freezes a mob, follow up with Ice Lance for a big instant hit.", rows: [
+    { n: "Elemental Precision", row: 1, pts: "5/5", fx: "+5% hit with Frost and Fire spells" },
+    { n: "Frostbite", row: 2, pts: "3/3", fx: "Frostbolt’s slow has a 15% chance to freeze the target" },
+    { n: "Ice Shards", row: 2, pts: "2/5", fx: "Frost crits hit harder" },
+    { n: "Ice Lance", row: 3, pts: "1/1", fx: "Teaches Ice Lance: 300% more damage to frozen targets" }
+  ] }
+};
+const BUILDS30 = {
+  arcane: { label: "Arcane", use: "Burst damage", el: "arcane", src: "Mobalytics’ level 30 Arcane build", blurb: "Cast Arcane Blast until Missile Barrage procs, then fire free, fast Arcane Missiles. Arcane Meditation keeps half your mana regeneration going while you cast.", rows: [
+    { n: "Arcane Focus", row: 1, pts: "2/5", fx: "+2% hit with Arcane spells" },
+    { n: "Improved Channeling", row: 1, pts: "5/5", fx: "Arcane Missiles ignores pushback; Arcane Blast mostly does too" },
+    { n: "Arcane Concentration", row: 2, pts: "5/5", fx: "A 10% chance after each damage spell to make the next one free" },
+    { n: "Arcane Impact", row: 3, pts: "3/3", fx: "+6% crit chance on Arcane spells" },
+    { n: "Arcane Blast", row: 3, pts: "1/1", fx: "Teaches Arcane Blast" },
+    { n: "Arcane Meditation", row: 4, pts: "3/3", fx: "50% of your mana regeneration keeps going while you cast" },
+    { n: "Missile Barrage", row: 4, pts: "1/1", fx: "Arcane Blast can make your next Arcane Missiles free and twice as fast" },
+    { n: "Presence of Mind", row: 5, pts: "1/1", fx: "Your next spell is instant; 3-minute cooldown" }
+  ] },
+  fire: { label: "Fire", use: "Solo questing", el: "fire", src: "Mobalytics’ level 30 Fire build", blurb: "Open with Fireball, then let Scorch and Fireball crits build Hot Streak until Pyroblast casts in a flash. Blast Wave handles packs that reach you.", rows: [
+    { n: "Improved Fireball", row: 1, pts: "5/5", fx: "Fireball casts 0.5 seconds faster" },
+    { n: "Ignite", row: 2, pts: "5/5", fx: "Fire crits leave a burn worth 40% of the hit" },
+    { n: "Flame Throwing", row: 2, pts: "2/2", fx: "+6 yards of range on Fire spells" },
+    { n: "Burning Soul", row: 3, pts: "3/3", fx: "Getting hit rarely delays your Fire spells; less threat" },
+    { n: "Pyroblast", row: 3, pts: "1/1", fx: "Teaches Pyroblast" },
+    { n: "Improved Scorch", row: 4, pts: "3/3", fx: "Each Scorch makes the target take a little more Fire damage from you, up to 5 times" },
+    { n: "Hot Streak", row: 4, pts: "1/1", fx: "Crits stack up toward a much faster Pyroblast" },
+    { n: "Blast Wave", row: 5, pts: "1/1", fx: "An instant ring of fire that damages and slows nearby enemies" }
+  ] },
+  frost: { label: "Frost", use: "Safe leveling", el: "frost", src: "Mobalytics’ level 30 Frost build", blurb: "Slow, freeze, then shatter: frozen targets take near-certain crits from Ice Lance and Frostbolt, and Ice Block saves you when a pull goes wrong.", rows: [
+    { n: "Improved Frostbolt", row: 1, pts: "5/5", fx: "Frostbolt casts 0.5 seconds faster" },
+    { n: "Elemental Precision", row: 1, pts: "2/5", fx: "+2% hit with Frost and Fire spells" },
+    { n: "Ice Shards", row: 2, pts: "5/5", fx: "Frost crits do double the extra damage" },
+    { n: "Frostbite", row: 2, pts: "3/3", fx: "A 15% chance your slows freeze the target" },
+    { n: "Ice Lance", row: 3, pts: "1/1", fx: "Teaches Ice Lance" },
+    { n: "Ice Block", row: 4, pts: "1/1", fx: "10 seconds of immunity; moved up to row 4 in Forever" },
+    { n: "Shatter", row: 4, pts: "3/3", fx: "+50% crit chance against frozen targets" },
+    { n: "Fingers of Frost", row: 5, pts: "1/2", fx: "Your slows can make the next spell act as if the target were frozen" }
+  ] }
+};
+
+/* ---------- spells ---------- */
+const SPELLS20_NEW = [
+  { id: "s-frostbolt4", name: "Frostbolt", rank: 4, lvl: 20, tag: "changed", note: "Your main Frost spell; the slow lasts 7 seconds. Forever cut its damage about 17% from Classic." },
+  { id: "s-blizzard1", name: "Blizzard", rank: 1, lvl: 20, note: "Channels ice shards onto an area for 8 seconds. Great on packs, but it costs a lot of mana." },
+  { id: "s-blink", name: "Blink", lvl: 20, note: "Teleports you 20 yards forward and breaks stuns and roots. Your main escape, on a 15-second cooldown." },
+  { id: "s-evocation", name: "Evocation", lvl: 20, note: "Channel for 8 seconds while your mana comes back 16 times as fast. 8-minute cooldown, so use it whenever you’re low." },
+  { id: "s-manashield1", name: "Mana Shield", rank: 1, lvl: 20, note: "Absorbs physical damage by draining your mana instead. Lasts a minute." },
+  { id: "s-fireward1", name: "Fire Ward", rank: 1, lvl: 20, note: "Absorbs Fire damage for 30 seconds." },
+  { id: "s-poly2", name: "Polymorph", rank: 2, lvl: 20, note: "The sheep now lasts up to 30 seconds. Any damage breaks it." },
+  { id: "s-frostarmor3", name: "Frost Armor", rank: 3, lvl: 20, note: "More armor, and melee attackers are still slowed." },
+  { id: "s-water3", name: "Conjure Water", rank: 3, lvl: 20, note: "Makes 20 bottles of purified water per cast." },
+  { id: "s-talentspell", info: true, mark: "↓", name: "Arcane Blast, Pyroblast or Ice Lance", lvl: 20, noteHTML: 'Your row 3 talent teaches one of these, depending on your build. See <a href="#talents">your talents</a>.' }
+];
+const SPELLS20_OLD = [
+  { id: "s-fireball4", name: "Fireball", rank: 4, lvl: 18, tag: "changed", note: "Now a 3-second cast. Forever lowered its base damage, so spell power on gear matters more." },
+  { id: "s-amplify1", name: "Amplify Magic", rank: 1, lvl: 18, tag: "changed", note: "On a party member: they get more from heals but also take more spell damage. 50% stronger than in Classic." },
+  { id: "s-rlc", name: "Remove Lesser Curse", lvl: 18, tag: "changed", note: "Removes a curse, and in Forever a bane too, from a friendly target." },
+  { id: "s-missiles2", name: "Arcane Missiles", rank: 2, lvl: 16, note: "Channels a stream of Arcane missiles for 4 seconds." },
+  { id: "s-flamestrike1", name: "Flamestrike", rank: 1, lvl: 16, tag: "changed", note: "Drops a pillar of fire on an area, then leaves it burning. Only one of yours can burn at a time in Forever." },
+  { id: "s-fireblast2", name: "Fire Blast", rank: 2, lvl: 14, note: "Instant Fire damage on an 8-second cooldown. Your finisher, and you can cast it while moving." },
+  { id: "s-ae1", name: "Arcane Explosion", rank: 1, lvl: 14, note: "Instant Arcane damage to every enemy within 10 yards." },
+  { id: "s-ai2", name: "Arcane Intellect", rank: 2, lvl: 14, tag: "changed", note: "+7 Intellect. It lasts an hour in Forever, twice as long as in Classic." },
+  { id: "s-food2", name: "Conjure Food", rank: 2, lvl: 12, note: "Makes 20 loaves of bread per cast." },
+  { id: "s-dampen1", name: "Dampen Magic", rank: 1, lvl: 12, tag: "changed", note: "On a party member: less spell damage taken, less healing received. 50% stronger than in Classic." },
+  { id: "s-slowfall", name: "Slow Fall", lvl: 12, note: "Slows your fall for 30 seconds. Each cast uses a Light Feather." },
+  { id: "s-nova1", name: "Frost Nova", rank: 1, lvl: 10, note: "Freezes nearby enemies in place for up to 8 seconds. Step away and keep casting." },
+  { id: "s-comprehend", name: "Comprehend Scroll", lvl: 6, tag: "new", note: "Reads the untranslated scrolls you find, for buffs, weapon enchants and more. A failed read turns you into a sheep, so raise your Comprehension skill first." },
+  { id: "s-detect", info: true, mark: "×", name: "Detect Magic", lvl: 16, note: "Gone in Forever. Nothing to train here." }
+];
+const SPELLS30 = [
+  { id: "s30-scorch1", name: "Scorch", rank: 1, lvl: 22, tag: "changed", note: "A quick 1.5-second Fire spell. Fire mages use it to stack Improved Scorch and fish for Hot Streak crits. Forever cut its damage by about a third." },
+  { id: "s30-frostward1", name: "Frost Ward", rank: 1, lvl: 22, note: "Absorbs Frost damage for 30 seconds." },
+  { id: "s30-fireblast3", name: "Fire Blast", rank: 3, lvl: 22, note: "Instant Fire damage on an 8-second cooldown." },
+  { id: "s30-ae2", name: "Arcane Explosion", rank: 2, lvl: 22, note: "Instant Arcane damage to everything within 10 yards." },
+  { id: "s30-food3", name: "Conjure Food", rank: 3, lvl: 22, note: "Makes 20 loaves of rye per cast." },
+  { id: "s30-counterspell", name: "Counterspell", lvl: 24, note: "Interrupts a spellcast and locks the enemy out of that school for 10 seconds. 30-second cooldown." },
+  { id: "s30-fireball5", name: "Fireball", rank: 5, lvl: 24, tag: "changed", note: "Now a 3.5-second cast." },
+  { id: "s30-missiles3", name: "Arcane Missiles", rank: 3, lvl: 24, note: "A 5-second channel of Arcane missiles." },
+  { id: "s30-flamestrike2", name: "Flamestrike", rank: 2, lvl: 24, note: "A stronger fire pillar. Only one of yours burns at a time." },
+  { id: "s30-dampen2", name: "Dampen Magic", rank: 2, lvl: 24, note: "Less spell damage taken, less healing received." },
+  { id: "s30-pyro2", name: "Pyroblast", rank: 2, lvl: 24, opt: true, note: "Only if you took the Pyroblast talent; the trainer won’t sell it otherwise." },
+  { id: "s30-frostbolt5", name: "Frostbolt", rank: 5, lvl: 26, note: "A stronger Frostbolt with a 3-second cast." },
+  { id: "s30-nova2", name: "Frost Nova", rank: 2, lvl: 26, note: "Freezes nearby enemies for up to 8 seconds." },
+  { id: "s30-coc1", name: "Cone of Cold", rank: 1, lvl: 26, tag: "changed", note: "An instant cone of frost that damages and slows. Forever’s slow is 40% for 6 seconds (Classic: 50% for 8)." },
+  { id: "s30-ai3", name: "Arcane Intellect", rank: 3, lvl: 28, note: "+15 Intellect for an hour." },
+  { id: "s30-blizzard2", name: "Blizzard", rank: 2, lvl: 28, note: "A stronger Blizzard." },
+  { id: "s30-scorch2", name: "Scorch", rank: 2, lvl: 28, note: "A stronger Scorch." },
+  { id: "s30-manashield2", name: "Mana Shield", rank: 2, lvl: 28, note: "Absorbs up to 210 physical damage." },
+  { id: "s30-agate", name: "Conjure Mana Agate", lvl: 28, note: "Makes a Mana Agate you can use mid-fight for about 400 mana." },
+  { id: "s30-icelance2", name: "Ice Lance", rank: 2, lvl: 28, opt: true, note: "Only if you took the Ice Lance talent." },
+  { id: "s30-icearmor1", name: "Ice Armor", rank: 1, lvl: 30, note: "Replaces Frost Armor: much more armor, a little Frost resistance, and it still slows attackers." },
+  { id: "s30-fireball6", name: "Fireball", rank: 6, lvl: 30, note: "A stronger Fireball." },
+  { id: "s30-fireblast4", name: "Fire Blast", rank: 4, lvl: 30, note: "A stronger Fire Blast." },
+  { id: "s30-ae3", name: "Arcane Explosion", rank: 3, lvl: 30, note: "A stronger Arcane Explosion." },
+  { id: "s30-amplify2", name: "Amplify Magic", rank: 2, lvl: 30, note: "More healing received and more spell damage taken." },
+  { id: "s30-water4", name: "Conjure Water", rank: 4, lvl: 30, note: "Makes 20 bottles of spring water per cast." },
+  { id: "s30-fireward2", name: "Fire Ward", rank: 2, lvl: 30, note: "Absorbs up to 285 Fire damage." },
+  { id: "s30-blast2", name: "Arcane Blast", rank: 2, lvl: 30, opt: true, note: "Only if you took the Arcane Blast talent." },
+  { id: "s30-pyro3", name: "Pyroblast", rank: 3, lvl: 30, opt: true, note: "Only if you took the Pyroblast talent." }
+];
+const SPELL20 = {};
+SPELLS20_NEW.concat(SPELLS20_OLD).forEach((it) => { SPELL20[it.id] = it; });
+
+/* ---------- everything a race sees ---------- */
+function sectionsFor(lvl, race) {
+  const R = SITE.RACES[race] || SITE.RACES.human;
+  const fac = R.fac;
+  const home = CITY[HOME[race]] || CITY.stormwind;
+  const tps = TP[fac].slice();
+  // Your home city's teleport first.
+  tps.sort((x, y) => (x.city === HOME[race] ? -1 : y.city === HOME[race] ? 1 : 0));
+  const A = fac === "a";
+  const favorCamp = A ? "Three Corners in Redridge" : "the camp just west of the Crossroads in the Barrens";
+  const librarian = A ? "Garion Wendell in Stormwind’s Mage Quarter" : "Owen Thadd in Undercity’s Magic Quarter";
+
+  function tpItem(t) {
+    if (t.city) {
+      const c = CITY[t.city];
+      let note = c.portalNote;
+      if (t.city === "ironforge" && race !== "gnome") note += " Take the Deeprun Tram from Stormwind’s Dwarven District.";
+      if (t.city === "stormwind" && race === "gnome") note += " Take the Deeprun Tram from Tinker Town.";
+      if (t.city === "undercity" && race !== "undead") note += " Take the zeppelin from the tower outside Orgrimmar to Tirisfal Glades.";
+      if (t.city === "orgrimmar" && race === "undead") note += " Take the zeppelin from the Tirisfal towers to Durotar.";
+      return { id: t.id, name: t.name, lvl: t.lvl, note: note, where: [c.portal] };
+    }
+    return { id: t.id, name: t.name, lvl: t.lvl, note: t.note, where: [t.where] };
+  }
+  const runes = { id: "tp-runes", name: "Buy Runes of Teleportation", note: "Every teleport uses one. Reagent vendors in the capitals sell them; " + home.reagent.label + " is the closest to your trainers. They stack to 10.", where: [home.reagent] };
+  const hearth = { id: "tp-hearth", name: "Set your hearthstone at your questing hub", note: "Your teleports cover trips to the city, so let the hearthstone bring you back to your quests." };
+
+  // Nobody has confirmed the level 15 and 26 chains for the two new mage races yet.
+  const unsure = race === "orc" || race === "skyborne";
+  const unsureNote = (q) => (unsure ? Object.assign({}, q, { note: (q.note ? q.note + " " : "") + "Whether " + R.name + " mages get this chain isn’t confirmed yet." }) : q);
+  const racials = {
+    id: "racials", short: "Racials", title: "Your racial traits", el: fac, glyph: "crest",
+    intro: R.name + (R.sub ? " (" + R.sub + ")" : "") + " racials as they are after the Sept 24 beta patch. Put the active ones on your bars; the passive ones just work.",
+    items: RACIALS[race].map((r, i) => r.active
+      ? { id: "r-" + race + "-" + i, name: "Put " + r.name + " on your bars", tag: r.tag, note: r.fx + " " + r.cd + " cooldown. " + r.tip }
+      : { id: "r-" + race + "-" + i, info: true, mark: "i", name: r.name, tag: r.tag, note: r.fx + " " + r.tip })
+  };
+
+  const weapons = { id: "g-daggers", name: "Learn Daggers", whereText: home.weapon, note: "Mages start with Staves and Wands. The best one-handers for you are daggers" + (lvl === 30 ? ", Swinetusk Shank above all." : ".") + " About 10 silver." + (A ? "" : " Only Archibald in Undercity teaches One-Handed Swords for the Horde.") };
+  const swords = race === "human" ? { id: "g-swords", name: "Learn One-Handed Swords", opt: true, whereText: "Woo Ping, Trade District, Stormwind", note: "Sword Specialization gives you +2% spell crit with a sword equipped. Worth it once you find a sword with spell power." } : null;
+
+  if (lvl === 20) {
+    const S = [
+      {
+        id: "spells", short: "Spells", title: "Train your spells", glyph: "bolt",
+        intro: "Level 20 is a big training stop. Visit " + home.trainerName + " or another mage trainer in " + home.place + ", and buy everything on this list.",
+        where: [home.trainer],
+        groups: [
+          { title: "New at level 20", items: SPELLS20_NEW },
+          { title: "Top ranks from levels 1–18", hint: "If you trained at every stop, tick these off. Buy any you skipped.", items: SPELLS20_OLD }
+        ]
+      },
+      {
+        id: "teleports", short: "Teleports", title: "Teleports and runes", el: "arcane", glyph: "portal", steps: true,
+        intro: "At 20 you can learn your faction’s two home teleports. Portal trainers teach them, not the mage trainers, and in Classic each one taught only its own city’s teleport, so plan to visit both cities.",
+        items: tps.filter((t) => t.lvl === 20).map(tpItem).concat([runes, hearth]),
+        footnote: (A ? "Teleport: Darnassus" : "Teleport: Thunder Bluff") + " comes at 30, and portals at 40. The Reagent Economy Legacy perk should end your need for runes; it costs 11 Legacy points."
+      },
+      {
+        id: "quests", short: "Mage quests", title: "Mage class quests", el: "arcane", glyph: "scroll",
+        intro: "Mages have no must-do class quest before 30, but these give useful early gear. Tick them if you’ve done them; steps are listed if you haven’t.",
+        quests: [Q10[race], unsureNote(Q15[fac])],
+        extra: [{ id: "cq-library", name: "Unlock Research at a library", opt: true, tag: "new", note: "Turn a library book in to " + librarian + ", and mages unlock Research: Study, cast inside a library once an hour, makes a Bundle of Scrolls. Beta players report the Research tab disappearing, so it may be buggy." }]
+      },
+      racials,
+      {
+        id: "talents", short: "Talents", title: "Spend your talent points", glyph: "rune",
+        intro: "You have 11 points at level 20, one per level from 10. Each row of a tree needs 5 more points spent in that tree, so 11 points reach row 3, where each tree teaches a new spell. Pick the build that fits how you play.",
+        builds: BUILDS20,
+        check: { id: "t-spent", name: "All 11 talent points spent", note: "Open the talent window (N) and check that no points are left. Respecs cost 1 silver in the beta, so trying a build is cheap." }
+      },
+      {
+        id: "bar", short: "Your bars", title: "Set up your bars", glyph: "bar",
+        intro: "A mage lives on buffs, conjured food and a few emergency buttons. Set them up once and every pull gets easier.",
+        items: [
+          { id: "b-buffs", name: "Keep Frost Armor and Arcane Intellect up", note: "Arcane Intellect lasts an hour in Forever. Recast both after you die, and give Arcane Intellect to casters in your group." },
+          { id: "b-conjure", name: "Conjure food and water before you head out", note: "Each cast makes 20. Conjured items vanish if you stay logged out for more than 15 minutes, so make them fresh each session." },
+          { id: "b-wand", name: "Put your wand’s Shoot on an easy key", note: "Wands cost no mana, and your Spirit keeps restoring mana while you wand. Since the Sept 24 patch, spell power no longer raises wand damage, so pick wands for speed." },
+          { id: "b-escape", name: "Keep Frost Nova, Blink and Polymorph on quick keys", note: "Frost Nova then Blink gets you out of melee. Polymorph takes one mob out of a bad pull for up to 30 seconds." },
+          { id: "b-evoc", name: "Use Evocation instead of a drink when you’re low", note: "It refills most of your mana in 8 seconds and comes back every 8 minutes." }
+        ],
+        setsTitle: "How a pull goes, by build",
+        sets: [
+          { name: "Arcane", el: "arcane", rows: [["Open", "Arcane Blast, once or twice"], ["Then", "Your wand, boosted by Wand Specialization"], ["Finish", "Fire Blast"], ["Trouble", "Frost Nova, then Blink away"]], note: "Arcane Explosion when three or more mobs reach you." },
+          { name: "Fire", el: "fire", rows: [["Open", "Pyroblast from range"], ["Then", "Fireball"], ["Finish", "Fire Blast, likelier to crit after a kill"], ["Trouble", "Frost Nova, then Blink away"]], note: "Flamestrike packs before they reach you." },
+          { name: "Frost", el: "frost", rows: [["Open", "Frostbolt"], ["Then", "Frostbolt; Ice Lance when Frostbite freezes"], ["Finish", "Fire Blast or Ice Lance"], ["Trouble", "Frost Nova, Ice Lance, Blink"]], note: "Blizzard packs you’ve frozen with Frost Nova." }
+        ]
+      },
+      {
+        id: "gear", short: "Gear & extras", title: "Weapons, gear and extras", glyph: "staff",
+        items: [weapons].concat(swords ? [swords] : []).concat([
+          { id: "g-wand", name: "Get a wand", note: "Sizzle Stick, from Deviate Eradication at Wailing Caverns, is the best wand you can count on at 20. Until then, buy one from a wand vendor or ask an enchanter for a Greater Magic Wand." },
+          { id: "g-bis", name: "Work through your best-in-slot list", noteHTML: 'The <a href="/gear">gear guide</a> has your picks for each slot, and the <a href="/dungeons">dungeon planner</a> puts the runs in order.' },
+          { id: "g-tailor", name: "Consider Tailoring", opt: true, note: "Forever’s school sets (Pearly for Arcane, Flame for Fire, Silky for Frost) are the best hat, gloves and belt at 20. Their patterns cost 30 Merchant’s Favor at " + favorCamp + "." },
+          { id: "g-books", name: "Collect library books", opt: true, note: "Ten books handed to " + librarian + " give the Scholarly Pendant, your necklace at 20." },
+          { id: "g-legacy", name: "Plan your first Legacy points", opt: true, note: "Talented starts your talent points earlier, but it needs Well Rested maxed first, so your first extra talent point costs 6 Legacy points. Reagent Economy, which ends your need for runes, costs 11. Values come from beta tooltips and could change." }
+        ])
+      },
+      { id: "next", short: "At 30", title: "Coming at level 30", glyph: "next",
+        intro: "Blizzard plans to raise the beta cap to 30 a couple of weeks into testing. This is what opens up then; nothing here can be done yet." }
+    ];
+    return S;
+  }
+
+  /* level 30 */
+  return [
+    {
+      id: "spells", short: "Spells", title: "Train your spells", glyph: "bolt",
+      intro: "Visit " + home.trainerName + " or another mage trainer in " + home.place + " at every even level from 22 to 30. Talent spells like Pyroblast and Ice Lance get new ranks only if you took the talent.",
+      where: [home.trainer],
+      groups: [
+        { title: "New from level 22 to 30", items: SPELLS30 },
+        { title: "Still needed from level 20", hint: "These have no higher rank before 30. Tick them if you already know them.", items: ["s-blink", "s-evocation", "s-poly2", "s-slowfall", "s-rlc", "s-comprehend"].map((id) => SPELL20[id]) }
+      ]
+    },
+    {
+      id: "teleports", short: "Teleports", title: "Teleports and runes", el: "arcane", glyph: "portal", steps: true,
+      intro: "At 30 you add your faction’s third teleport. Portal trainers teach them, not the mage trainers, and in Classic each one taught only its own city’s teleport.",
+      items: tps.map(tpItem).concat([runes, hearth]),
+      footnote: "Portals come at 40. The Reagent Economy Legacy perk should end your need for runes; it costs 11 Legacy points."
+    },
+    {
+      id: "quests", short: "Mage quests", title: "Mage class quests", el: "arcane", glyph: "scroll",
+      intro: "Two class quests open between 26 and 30. The robe is a sidegrade, so it’s optional; the wand chain is worth picking up now for later.",
+      quests: [Object.assign({ opt: true }, unsureNote(Q26[fac])), Q30]
+    },
+    racials,
+    {
+      id: "talents", short: "Talents", title: "Spend your talent points", glyph: "rune",
+      intro: "You have 21 points at level 30. Row 4 opens at 25 and row 5 at 30. Forever moved Ice Block up to row 4 and Cold Snap down to row 5.",
+      builds: BUILDS30,
+      check: { id: "t30-spent", name: "All 21 talent points spent", note: "Open the talent window (N) and check that no points are left. Respecs cost 1 silver in the beta, so trying a build is cheap." }
+    },
+    {
+      id: "bar", short: "Your bars", title: "Set up your bars", glyph: "bar",
+      intro: "Level 30 adds Counterspell, a mana gem, Ice Armor and your row 4 and 5 talents. Give each a key.",
+      items: [
+        { id: "b30-icearmor", name: "Switch Frost Armor to Ice Armor", note: "Much more armor, and attackers are still slowed. Recast it after you die." },
+        { id: "b-buffs", name: "Keep your armor and Arcane Intellect up", note: "Arcane Intellect lasts an hour in Forever. Give it to casters in your group too." },
+        { id: "b-conjure", name: "Conjure food, water and a Mana Agate before you head out", note: "Food and water come 20 per cast. The agate restores about 400 mana mid-fight. Conjured items vanish if you stay logged out for more than 15 minutes." },
+        { id: "b30-counter", name: "Put Counterspell on a key", note: "Interrupt caster mobs and lock them out of their school for 10 seconds." },
+        { id: "b-wand", name: "Keep your wand’s Shoot on an easy key", note: "Wands cost no mana, and spell power no longer raises their damage, so pick wands for speed." },
+        { id: "b-escape", name: "Keep Frost Nova, Blink and Polymorph on quick keys", note: "Frost Nova then Blink gets you out of melee. Cone of Cold slows anything that follows." }
+      ],
+      setsTitle: "How a pull goes, by build",
+      sets: [
+        { name: "Arcane", el: "arcane", rows: [["Open", "Arcane Blast, building 2 to 4 stacks"], ["Then", "Arcane Missiles when Missile Barrage procs"], ["Finish", "Fire Blast or your wand"], ["Trouble", "Presence of Mind, Frost Nova, Blink"]], note: "Stacks make the next Blast cost more, so spend them before you run dry." },
+        { name: "Fire", el: "fire", rows: [["Open", "Fireball"], ["Then", "Scorch and Fireball until Hot Streak, then Pyroblast"], ["Finish", "Fire Blast"], ["Trouble", "Blast Wave, Frost Nova, Blink"]], note: "Flamestrike and Blast Wave for packs." },
+        { name: "Frost", el: "frost", rows: [["Open", "Frostbolt"], ["Then", "Freeze it, then Ice Lance and Frostbolt for Shatter crits"], ["Finish", "Ice Lance or Cone of Cold"], ["Trouble", "Ice Block, then Blink"]], note: "Fingers of Frost can make the next spell treat any target as frozen." }
+      ]
+    },
+    {
+      id: "gear", short: "Gear & extras", title: "Weapons, gear and extras", glyph: "staff",
+      items: [weapons].concat(swords ? [swords] : []).concat([
+        { id: "g30-wand", name: "Upgrade your wand", note: "Blackfathom Villainy’s Gravestone Scepter needs no level, enchanters make the Greater Mystic Wand, and wand vendors sell the Pestilent Wand at 30." },
+        { id: "g-bis", name: "Work through your best-in-slot list", noteHTML: 'The <a href="/gear">gear guide</a> has your picks for each slot, and the <a href="/dungeons">dungeon planner</a> puts the runs in order.' },
+        { id: "g30-tailor", name: "Push Tailoring toward 125", opt: true, note: "Your school’s leggings (Tailoring 125) and gown (110) are the two biggest upgrades at 30. Patterns cost 30 Merchant’s Favor at " + favorCamp + "." },
+        { id: "g30-books", name: "Collect 20 library books", opt: true, note: "Greater Friend of the Library gives Philanthropist’s Ring, the best ring at 30, but several books are in zones above 30. Hand them to " + librarian + "." },
+        { id: "g30-legacy", name: "Pick Legacy perks that fit in 16 points", opt: true, note: "Talented (up to five extra talent points) costs 10 with its prerequisite. Reagent Economy (no more runes) costs 11. Together they’re over the 16-point limit, so choose one." }
+      ].concat(A ? [{ id: "g30-exsite", name: "Try the new Excavation Site dungeon", opt: true, note: "Forever’s new level 24–29 dungeon, above Whelgar’s Excavation Site in the Wetlands. Nobody has published its loot yet." }] : []))
+    },
+    { id: "next", short: "After 30", title: "After the beta", glyph: "next",
+      intro: "The beta stays at 30 until it ends on October 21. This is what comes next at launch." }
+  ];
+}
+
+function nextFor(lvl, race) {
+  const fac = SITE.faction(race);
+  if (lvl === 20) {
+    return [
+      { lvl: "22", items: ["Scorch", "Frost Ward", "Fire Blast rank 3", "Arcane Explosion rank 2", "Conjure Food rank 3"] },
+      { lvl: "24", items: ["Counterspell", "Fireball rank 5", "Arcane Missiles rank 3", "Flamestrike rank 2", "Dampen Magic rank 2"] },
+      { lvl: "25", items: ["Your 16th talent point opens row 4: Missile Barrage and Arcane Meditation, Hot Streak and Improved Scorch, or Shatter and Ice Block"] },
+      { lvl: "26", items: ["Cone of Cold", "Frostbolt rank 5", "Frost Nova rank 2", "The level 26 mage robe quest"] },
+      { lvl: "28", items: ["Conjure Mana Agate", "Arcane Intellect rank 3", "Blizzard rank 2", "Scorch rank 2", "Mana Shield rank 2"] },
+      { lvl: "30", items: ["Ice Armor", fac === "a" ? "Teleport: Darnassus" : "Teleport: Thunder Bluff", "Your 21st point opens row 5: Presence of Mind, Blast Wave or Fingers of Frost", "Fireball rank 6", "Conjure Water rank 4", "The Journey to the Marsh wand chain"] }
+    ];
+  }
+  return [
+    { lvl: "32", items: ["Frostbolt rank 6", "Arcane Missiles rank 4", "Flamestrike rank 3", "Frost Ward rank 2", "Conjure Food rank 4"] },
+    { lvl: "34", items: ["Mage Armor (in Forever it keeps 50% of your mana regeneration going while you cast)", "Cone of Cold rank 2", "Scorch rank 3"] },
+    { lvl: "35", items: ["Your 26th talent point opens row 6"] },
+    { lvl: "36", items: ["Fireball rank 7", "Blizzard rank 3", "Mana Shield rank 3", "Dampen Magic rank 3"] },
+    { lvl: "38", items: ["Frostbolt rank 7", "Fire Blast rank 5", "Arcane Explosion rank 4", "Conjure Mana Jade"] },
+    { lvl: "40", items: ["Frostfire Bolt (new: counts as both Fire and Frost)", "Portals to your faction’s capitals", "Polymorph rank 3", "Ice Armor rank 2", "Row 7 talents: Arcane Power, Combustion or Ice Barrier"] }
+  ];
+}
+
+const SOURCES = [
+  { name: "Mage abilities in WoW Forever (beta client data)", site: "wowclassicforever.info", url: "https://wowclassicforever.info/classes/mage/abilities/" },
+  { name: "Mage talent calculator (beta client data)", site: "wowclassicforever.info", url: "https://wowclassicforever.info/talent/mage/" },
+  { name: "Mage abilities with ranks and levels", site: "wowforevertalents.com", url: "https://wowforevertalents.com/abilities/mage/" },
+  { name: "Frost, Fire and Arcane Mage guides", site: "Icy Veins", url: "https://www.icy-veins.com/wow-forever/frost-mage-ranged-dps-pve-guide" },
+  { name: "Level 30 Mage builds", site: "Mobalytics", url: "https://mobalytics.gg/wow-forever/classes/frost-mage-guide" },
+  { name: "Level 20 Arcane Mage overview", site: "Wowhead", url: "https://www.wowhead.com/forever/guide/classes/mage/arcane/level-20-dps-overview" },
+  { name: "Race and class list, and racials", site: "Blizzard", url: "https://worldofwarcraft.blizzard.com/en-us/news/24304075/create-the-hero-you-want-to-be-in-world-of-warcraft-forever" },
+  { name: "Beta development notes, Sept 24", site: "Icy Veins", url: "https://www.icy-veins.com/wow-forever/news/class-and-race-changes-gamepad-support-and-more-wow-forever-beta-development-notes-september-24th/" },
+  { name: "Racials compared with Classic", site: "foreverdiff", url: "https://foreverdiff.com/racials/" },
+  { name: "Mage class page and city NPC locations", site: "forever-codex", url: "https://forever-codex.com/classes/mage/" },
+  { name: "Mage class quests (Mirror Lake and others)", site: "Wowhead", url: "https://www.wowhead.com/forever/quest=1861/mirror-lake" },
+  { name: "Human, Orc and Troll, Undead and Skyborne routes 1–20", site: "ForeverWisp", url: "https://www.foreverwisp.com/guides/wow-forever-human-leveling-guide" },
+  { name: "Library books and mage Research", site: "zockify", url: "https://www.zockify.com/forever/library-books/" },
+  { name: "Legacy System guide", site: "Warcraft Tavern", url: "https://www.warcrafttavern.com/forever/guides/legacy/" },
+  { name: "Weapon skills in WoW Forever", site: "Warcraft Tavern", url: "https://www.warcrafttavern.com/forever/news/weapon-skills-in-world-of-warcraft-forever/" }
+];
+
+/* ---------- derived ---------- */
+function sectionItems(sec) {
+  let out = [];
+  if (sec.groups) out = sec.groups.reduce((all, g) => all.concat(g.items), []);
+  if (sec.quests) out = out.concat(sec.quests);
+  if (sec.extra) out = out.concat(sec.extra);
+  if (sec.check) out = out.concat([sec.check]);
+  if (sec.items) out = out.concat(sec.items);
+  return out;
+}
+const VALID_ALL = new Set();
+let TITLE = "", LEDE = "", SECTIONS = [], BUILDS = {}, NEXT = [], SOCKETS = [], CHECKABLE = {}, VALID = new Set(), TOTAL = 0, LEVEL = 20, RACE = "human";
+function useLevel(lvl, race) {
+  LEVEL = lvl === 30 ? 30 : 20;
+  RACE = SITE.RACES[race] ? race : "human";
+  const R = SITE.RACES[RACE];
+  TITLE = "Level " + LEVEL + " " + R.name + " Mage";
+  LEDE = "Everything a " + R.name + " mage can train, unlock and quest for at the beta’s level " + LEVEL + " cap. Tick things off as you play.";
+  SECTIONS = sectionsFor(LEVEL, RACE);
+  BUILDS = LEVEL === 30 ? BUILDS30 : BUILDS20;
+  NEXT = nextFor(LEVEL, RACE);
+  const fac = R.fac;
+  const tps = TP[fac].slice().sort((x, y) => (x.city === HOME[RACE] ? -1 : y.city === HOME[RACE] ? 1 : 0));
+  SOCKETS = tps.map((t) => ({ id: t.id, name: t.short, lvl: t.lvl })).concat([{ id: null, name: "Portals", lvl: 40 }]);
+  CHECKABLE = {};
+  VALID = new Set();
+  SECTIONS.forEach((sec) => {
+    const ids = sectionItems(sec).filter((it) => !it.info).map((it) => it.id);
+    ids.forEach((id) => VALID.add(id));
+    CHECKABLE[sec.id] = ids;
+  });
+  TOTAL = VALID.size;
+}
+[20, 30].forEach((l) => Object.keys(SITE.RACES).forEach((r) => { useLevel(l, r); VALID.forEach((id) => VALID_ALL.add(id)); }));
+
+/* ---------- helpers ---------- */
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+function pct(d, t) { return t ? Math.round((d / t) * 100) : 0; }
+function countIn(st, ids) { return ids.filter((id) => st.done.has(id)).length; }
+function countAll(st) { let n = 0; st.done.forEach((id) => { if (VALID.has(id)) n++; }); return n; }
+function fmtTime(iso) {
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return "";
+  try { return d.toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); }
+  catch (e) { return d.toISOString().slice(0, 16).replace("T", " "); }
+}
+function wayText(w) { return "/way " + w.zone + " " + w.x + " " + w.y; }
+function coordBtn(w) {
+  return '<button type="button" class="coord" data-way="' + esc(wayText(w)) + '" title="Copy a TomTom /way command">'
+    + (w.label ? "<span>" + esc(w.label) + " ·</span>" : "")
+    + "<span>" + esc(w.zone) + "</span>"
+    + '<span class="coord-xy">' + esc(w.x) + ", " + esc(w.y) + "</span></button>";
+}
+function chips(it) {
+  let h = "";
+  if (it.rank) h += '<span class="chip">Rank ' + it.rank + "</span>";
+  if (it.lvl) h += '<span class="chip">Lvl ' + it.lvl + "</span>";
+  if (it.tag === "new") h += '<span class="chip chip-new">New in Forever</span>';
+  if (it.tag === "changed") h += '<span class="chip">Changed in Forever</span>';
+  if (it.opt) h += '<span class="chip chip-opt">Optional</span>';
+  return h;
+}
+
+/* ---------- rendering ---------- */
+function itemHTML(it, isDone, num) {
+  const note = it.noteHTML ? it.noteHTML : (it.note ? esc(it.note) : "");
+  if (it.info) {
+    return '<li class="item is-info"><span class="info-mark" aria-hidden="true">' + esc(it.mark || "i") + "</span>"
+      + '<div class="item-body"><span class="item-head"><span class="item-title">' + esc(it.name) + "</span>" + chips(it) + "</span>"
+      + (note ? '<span class="item-note">' + note + "</span>" : "") + "</div></li>";
+  }
+  const cid = "cb-" + it.id;
+  let meta = "";
+  if (it.where) meta = '<div class="item-meta">' + it.where.map(coordBtn).join("") + "</div>";
+  else if (it.whereText) meta = '<div class="item-meta"><span class="where-text">' + esc(it.whereText) + "</span></div>";
+  return '<li class="item' + (isDone ? " is-done" : "") + '" data-item="' + it.id + '">'
+    + '<input type="checkbox" class="tick" id="' + cid + '" data-id="' + it.id + '"' + (isDone ? " checked" : "") + ">"
+    + '<label class="item-body" for="' + cid + '"><span class="item-head">'
+    + (num ? '<span class="step-num">' + num + "</span>" : "")
+    + '<span class="item-title">' + esc(it.name) + "</span>" + chips(it) + "</span>"
+    + (note ? '<span class="item-note">' + note + "</span>" : "") + "</label>" + meta + "</li>";
+}
+
+function questHTML(q, isDone) {
+  if (q.info) return itemHTML(q, false);
+  const cid = "cb-" + q.id;
+  return '<li class="item quest' + (isDone ? " is-done" : "") + '" data-item="' + q.id + '" data-el="' + q.el + '">'
+    + '<input type="checkbox" class="tick" id="' + cid + '" data-id="' + q.id + '"' + (isDone ? " checked" : "") + ">"
+    + '<label class="item-body" for="' + cid + '"><span class="item-head"><span class="item-title">' + esc(q.name) + "</span>"
+    + '<span class="chip chip-el" data-el="' + q.el + '">' + esc(q.sub) + "</span>" + (q.opt ? '<span class="chip chip-opt">Optional</span>' : "") + "</span>"
+    + '<span class="item-note">Reward: ' + esc(q.reward) + "." + (q.note ? " " + esc(q.note) : "") + " Steps if you still need it:</span></label>"
+    + '<ol class="steps">' + q.steps.map((s) => '<li><span>' + esc(s.t) + "</span>"
+      + (s.where ? '<span class="step-where">' + s.where.map(coordBtn).join("") + "</span>" : "") + "</li>").join("")
+    + "</ol></li>";
+}
+
+function buildHTML(b) {
+  return '<p class="build-blurb">' + esc(b.blurb) + '</p><ul class="build">'
+    + b.rows.map((r) => '<li><span class="build-name">' + esc(r.n) + '</span><span class="build-pts">' + r.pts
+      + '</span><span class="build-row">Row ' + r.row + '</span><span class="build-fx">' + esc(r.fx) + "</span></li>").join("")
+    + '</ul><p class="build-src">Build source: ' + esc(b.src) + "</p>";
+}
+
+function talentsHTML(sec, st) {
+  const B = sec.builds;
+  const spec = B[st.spec] ? st.spec : "frost";
+  return '<fieldset class="spec"><legend class="sr-only">Choose a build</legend>'
+    + Object.keys(B).map((k) => '<label class="seg"><input type="radio" name="spec" id="spec-' + k + '" value="' + k + '"'
+      + (k === spec ? " checked" : "") + '><span class="seg-body"><span class="seg-name">' + esc(B[k].label)
+      + '</span><span class="seg-use">' + esc(B[k].use) + "</span></span></label>").join("")
+    + '</fieldset><div id="build-slot">' + buildHTML(B[spec]) + "</div>"
+    + '<ul class="items">' + itemHTML(sec.check, st.done.has(sec.check.id)) + "</ul>";
+}
+
+function setsHTML(sec) {
+  return '<h3 class="group-title">' + esc(sec.setsTitle || "Suggested sets") + '</h3><div class="sets">'
+    + sec.sets.map((s) => '<div class="set" data-el="' + (s.el || "") + '"><p class="set-name">' + esc(s.name) + '</p><ul class="set-slots">'
+      + s.rows.map((r) => '<li><span class="slot-el">' + esc(r[0]) + "</span><span>" + esc(r[1]) + "</span></li>").join("") + "</ul>"
+      + (s.note ? '<p class="set-note">' + esc(s.note) + "</p>" : "") + "</div>").join("")
+    + "</div>";
+}
+
+function nextHTML() {
+  return '<div class="next-grid">' + NEXT.map((n) => '<div class="lvl"><p class="lvl-num">Level ' + n.lvl + "</p><ul>"
+    + n.items.map((t) => "<li>" + esc(t) + "</li>").join("") + "</ul></div>").join("") + "</div>";
+}
+
+function panelHTML(sec, st) {
+  const ids = CHECKABLE[sec.id];
+  let body = "";
+  if (sec.intro) body += '<p class="panel-intro">' + esc(sec.intro) + "</p>";
+  if (sec.where) body += '<div class="panel-where">' + sec.where.map(coordBtn).join("") + "</div>";
+  if (sec.tips) body += '<ul class="tips">' + sec.tips.map((t) => "<li>" + esc(t) + "</li>").join("") + "</ul>";
+  if (sec.groups) {
+    body += sec.groups.map((g) => '<h3 class="group-title">' + esc(g.title) + "</h3>"
+      + (g.hint ? '<p class="group-hint">' + esc(g.hint) + "</p>" : "")
+      + '<ul class="items">' + g.items.map((it) => itemHTML(it, st.done.has(it.id))).join("") + "</ul>").join("");
+  }
+  if (sec.quests) body += '<ul class="items">' + sec.quests.map((q) => questHTML(q, st.done.has(q.id))).join("")
+    + (sec.extra ? sec.extra.map((it) => itemHTML(it, st.done.has(it.id))).join("") : "") + "</ul>";
+  if (sec.builds) body += talentsHTML(sec, st);
+  if (sec.items) {
+    body += sec.steps
+      ? '<ol class="items">' + sec.items.map((it, i) => itemHTML(it, st.done.has(it.id), i + 1)).join("") + "</ol>"
+      : '<ul class="items">' + sec.items.map((it) => itemHTML(it, st.done.has(it.id))).join("") + "</ul>";
+  }
+  if (sec.sets) body += setsHTML(sec);
+  if (sec.after) body += '<ul class="tips tips-after">' + sec.after.map((t) => "<li>" + esc(t) + "</li>").join("") + "</ul>";
+  if (sec.footnote) body += '<p class="footnote">' + esc(sec.footnote) + "</p>";
+  if (sec.id === "next") body += nextHTML();
+  return '<section class="panel" id="' + sec.id + '"' + (sec.el ? ' data-el="' + sec.el + '"' : "") + ' aria-labelledby="h-' + sec.id + '">'
+    + '<div class="panel-head"><span class="glyph">' + GLYPH[sec.glyph] + '</span><h2 id="h-' + sec.id + '">' + esc(sec.title) + "</h2>"
+    + (ids.length ? '<span class="panel-count" data-pcount="' + sec.id + '">' + countIn(st, ids) + "/" + ids.length + "</span>" : "")
+    + "</div>" + body + "</section>";
+}
+
+function socketState(s, st) {
+  if (!s.id) return { has: false, text: "Level " + s.lvl, locked: true };
+  if (s.lvl > LEVEL) return { has: false, text: "Level " + s.lvl, locked: true };
+  const has = st.done.has(s.id);
+  return { has: has, text: has ? "Learned" : "Not yet", locked: false };
+}
+function socketsHTML(st) {
+  return '<div class="sockets" aria-label="Your teleports">' + SOCKETS.map((s) => {
+    const x = socketState(s, st);
+    return '<div class="socket" data-el="arcane" data-socket="' + (s.id || "portals") + '" data-has="' + (x.has ? "1" : "0") + '"' + (x.locked ? ' data-locked="1"' : "") + ">"
+      + GLYPH.portal + '<span class="socket-name">' + esc(s.name) + '</span><span class="socket-state">' + esc(x.text) + "</span></div>";
+  }).join("") + "</div>";
+}
+
+function plateHTML(st) {
+  const n = countAll(st);
+  const R = SITE.RACES[RACE];
+  return '<header class="plate"><p class="eyebrow">WoW Forever beta · ' + esc(R.name) + " Mage</p><h1>" + esc(TITLE) + "</h1>"
+    + levelbarHTML()
+    + (window.racePickerHTML ? window.racePickerHTML({ race: RACE }) : "")
+    + '<p class="lede">' + esc(LEDE) + "</p>"
+    + '<p class="companion">Next: <a href="/gear">best-in-slot gear for your build</a> and the <a href="/dungeons">dungeon planner</a>.</p>'
+    + socketsHTML(st)
+    + '<div class="overall"><p class="overall-line"><span class="overall-num" id="ov-num">' + n + '</span><span class="overall-of">of ' + TOTAL + " done</span></p>"
+    + '<span class="bar" aria-hidden="true"><i id="ov-bar" style="width:' + pct(n, TOTAL) + '%"></i></span></div>'
+    + '<p class="status" id="save-status" role="status" aria-live="polite"></p>'
+    + '<label class="switch" for="hide-done"><input type="checkbox" id="hide-done"><span class="switch-track" aria-hidden="true"></span><span>Hide finished items</span></label>'
+    + "</header>";
+}
+
+function tocHTML(st) {
+  return '<nav class="toc" aria-label="Sections"><ul>' + SECTIONS.map((sec) => {
+    const ids = CHECKABLE[sec.id];
+    const d = countIn(st, ids);
+    return '<li><a class="toc-link" href="#' + sec.id + '"' + (sec.el ? ' data-el="' + sec.el + '"' : "") + ">"
+      + '<span class="toc-name"><span class="toc-long">' + esc(sec.title) + '</span><span class="toc-short">' + esc(sec.short) + "</span></span>"
+      + (ids.length
+        ? '<span class="toc-count" data-count="' + sec.id + '">' + d + "/" + ids.length + '</span><span class="bar toc-bar" aria-hidden="true"><i data-bar="' + sec.id + '" style="width:' + pct(d, ids.length) + '%"></i></span>'
+        : '<span class="toc-count">Preview</span>')
+      + "</a></li>";
+  }).join("") + "</ul></nav>";
+}
+
+function footerHTML() {
+  return '<footer class="foot"><p>Built from WoW Forever beta data and community guides as of late September 2026. Details can change before launch on November 4, and beta characters are wiped when the beta ends.</p>'
+    + '<p>Tap any coordinate to copy a TomTom <code>/way</code> command. Stormwind’s map is bigger in Forever, so its coordinates here use the new map; older guides use the Classic one.</p>'
+    + '<p>Your ticks are saved in this browser and don’t sync between devices. Fan-made and not affiliated with Blizzard Entertainment.</p>'
+    + (window.mageNoteFooter ? window.mageNoteFooter("Spotted a mistake, or know a better way?") : "")
+    + '<p><a href="/">Toolkit home</a> · <a href="/gear">Gear guide</a> · <a href="/dungeons">Dungeon planner</a> · <a href="/party">Party board</a></p>'
+    + '<div class="whoami" data-whoami></div>'
+    + '<h3 class="group-title">Sources</h3><ul class="sources">'
+    + SOURCES.map((s) => '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name) + "</a> <span>" + esc(s.site) + "</span></li>").join("")
+    + '</ul><div class="reset-row"><button type="button" class="reset" id="reset-btn">Clear all ticks</button></div></footer>';
+}
+
+function appHTML(st) {
+  return '<div class="shell"><aside class="rail">' + plateHTML(st) + tocHTML(st) + '</aside><main class="sections">'
+    + SECTIONS.map((sec) => panelHTML(sec, st)).join("") + footerHTML() + "</main></div>"
+    + '<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>';
+}
+
+/* ---------- state (saved in this browser) ---------- */
+const STORE_KEY = "forever-mage:checklist:v1";
+let canSave = true;
+function readState() {
+  const st = { done: new Set(), spec: "frost", savedAt: null };
+  try {
+    const raw = localStorage.getItem(STORE_KEY);
+    const p = raw ? JSON.parse(raw) : null;
+    if (p && Array.isArray(p.done)) p.done.forEach((id) => { if (VALID_ALL.has(id)) st.done.add(id); });
+    if (p && BUILDS20[p.spec]) st.spec = p.spec;
+    if (p && typeof p.savedAt === "string") st.savedAt = p.savedAt;
+  } catch (e) { /* start fresh */ }
+  return st;
+}
+function readHide() { try { return localStorage.getItem(HIDE_KEY) === "1"; } catch (e) { return false; } }
+function writeHide(on) { try { localStorage.setItem(HIDE_KEY, on ? "1" : "0"); } catch (e) { /* ignore */ } }
+function save() {
+  const savedAt = new Date().toISOString();
+  try {
+    localStorage.setItem(STORE_KEY, JSON.stringify({ v: 1, done: Array.from(state.done).sort(), spec: state.spec, savedAt: savedAt }));
+    state.savedAt = savedAt;
+    canSave = true;
+  } catch (e) { canSave = false; }
+  setStatus();
+}
+function setStatus() {
+  const el = document.getElementById("save-status");
+  if (!el) return;
+  let text = "Your ticks save in this browser.";
+  let tone = "ok";
+  if (!canSave) { text = "This browser won’t let the page save, so ticks last until you close the tab. Private windows often do this."; tone = "warn"; }
+  else if (state.savedAt) text = "Saved in this browser " + fmtTime(state.savedAt) + ".";
+  el.textContent = text;
+  el.setAttribute("data-tone", tone);
+}
+function changed() { save(); track("state", progressSummary()); }
+
+/* ---------- visit stats (see /assets/track.js) ---------- */
+function track(kind, data) { try { if (window.mageTrack) window.mageTrack(kind, data); } catch (e) { /* stats are optional */ } }
+function progressSummary() {
+  let tps = "";
+  Object.keys(TP_LETTER).forEach((id) => { if (state.done.has(id)) tps += TP_LETTER[id]; });
+  return { lvl: LEVEL, spec: state.spec, done: countAll(state), total: TOTAL, tps: tps, race: SITE.racePicked() ? RACE : "" };
+}
+function levelbarHTML() {
+  const levels = SITE.levels();
+  if (levels.length < 2) return "";
+  return '<div class="lvlbar" role="radiogroup" aria-label="Level cap">'
+    + levels.map((l) => '<label class="lvlopt"><input type="radio" name="lvl" value="' + l + '"' + (l === LEVEL ? " checked" : "") + '><span>Level ' + l + "</span></label>").join("")
+    + "</div>" + (SITE.preview && LEVEL === 30 ? '<p class="preview-note">Preview: level 30 isn’t live in the beta yet.</p>' : "");
+}
+
+/* ---------- live updates ---------- */
+function refresh() {
+  let total = 0;
+  SECTIONS.forEach((sec) => {
+    const ids = CHECKABLE[sec.id];
+    if (!ids.length) return;
+    const d = countIn(state, ids);
+    total += d;
+    app.querySelectorAll('[data-count="' + sec.id + '"],[data-pcount="' + sec.id + '"]').forEach((el) => { el.textContent = d + "/" + ids.length; });
+    const bar = app.querySelector('[data-bar="' + sec.id + '"]');
+    if (bar) bar.style.width = pct(d, ids.length) + "%";
+  });
+  const num = document.getElementById("ov-num");
+  if (num) num.textContent = String(total);
+  const bar = document.getElementById("ov-bar");
+  if (bar) bar.style.width = pct(total, TOTAL) + "%";
+  SOCKETS.forEach((s) => {
+    if (!s.id) return;
+    const el = app.querySelector('[data-socket="' + s.id + '"]');
+    if (!el) return;
+    const x = socketState(s, state);
+    el.setAttribute("data-has", x.has ? "1" : "0");
+    const lab = el.querySelector(".socket-state");
+    if (lab) lab.textContent = x.text;
+  });
+}
+
+function applyHide(on) {
+  app.setAttribute("data-hide-done", on ? "1" : "0");
+  const cb = document.getElementById("hide-done");
+  if (cb) cb.checked = on;
+}
+
+let toastTimer = 0;
+function showToast(msg, copyText) {
+  const t = document.getElementById("toast");
+  if (!t) return;
+  t.textContent = "";
+  const span = document.createElement("span");
+  span.textContent = msg;
+  t.appendChild(span);
+  if (copyText) {
+    const inp = document.createElement("input");
+    inp.type = "text";
+    inp.readOnly = true;
+    inp.id = "toast-copy";
+    inp.value = copyText;
+    inp.setAttribute("aria-label", "Waypoint command");
+    t.appendChild(inp);
+  }
+  t.hidden = false;
+  if (copyText) { const inp = document.getElementById("toast-copy"); if (inp) { inp.focus(); inp.select(); } }
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.hidden = true; }, copyText ? 9000 : 2600);
+}
+
+function copyWay(text) {
+  const fallback = () => showToast("Copy this:", text);
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => showToast("Copied " + text), fallback);
+    } else fallback();
+  } catch (e) { fallback(); }
+}
+
+let resetArmed = false;
+let resetTimer = 0;
+function onReset(btn) {
+  if (!resetArmed) {
+    resetArmed = true;
+    btn.textContent = "Tap again to clear every tick";
+    btn.classList.add("armed");
+    clearTimeout(resetTimer);
+    resetTimer = setTimeout(() => { resetArmed = false; btn.textContent = "Clear all ticks"; btn.classList.remove("armed"); }, 4000);
+    return;
+  }
+  resetArmed = false;
+  clearTimeout(resetTimer);
+  btn.textContent = "Clear all ticks";
+  btn.classList.remove("armed");
+  VALID.forEach((id) => state.done.delete(id));
+  app.querySelectorAll(".tick").forEach((cb) => {
+    cb.checked = false;
+    const li = cb.closest(".item");
+    if (li) li.classList.remove("is-done");
+  });
+  refresh();
+  changed();
+  showToast("Cleared every tick");
+}
+
+/* ---------- boot ---------- */
+const app = document.getElementById("app");
+if (!app) return;
+useLevel(SITE.level(), SITE.race());
+const state = readState();
+try { localStorage.setItem(STORE_KEY + ":test", "1"); localStorage.removeItem(STORE_KEY + ":test"); } catch (e) { canSave = false; }
+function renderAll() {
+  document.title = TITLE;
+  app.innerHTML = appHTML(state);
+  applyHide(readHide());
+  setStatus();
+}
+renderAll();
+track("view", state.savedAt ? progressSummary() : (SITE.racePicked() ? { race: RACE } : null));
+// Notes to the admin carry the level, race and build being looked at.
+window.mageNoteContext = () => ({ lvl: LEVEL, spec: state.spec, race: RACE });
+
+app.addEventListener("change", (e) => {
+  const t = e.target;
+  if (t.classList && t.classList.contains("tick")) {
+    const id = t.getAttribute("data-id");
+    if (!VALID.has(id)) return;
+    if (t.checked) state.done.add(id); else state.done.delete(id);
+    const li = t.closest(".item");
+    if (li) li.classList.toggle("is-done", t.checked);
+    refresh();
+    changed();
+  } else if (t.name === "spec") {
+    if (!BUILDS[t.value]) return;
+    state.spec = t.value;
+    const slot = document.getElementById("build-slot");
+    if (slot) slot.innerHTML = buildHTML(BUILDS[t.value]);
+    changed();
+  } else if (t.id === "hide-done") {
+    writeHide(t.checked);
+    applyHide(t.checked);
+  } else if (t.name === "lvl") {
+    SITE.setLevel(t.value);
+  }
+});
+
+// The level cap or race changed (the owner raised the cap, or the visitor picked a level or race).
+SITE.onChange(() => {
+  const lvl = SITE.level();
+  const race = SITE.race();
+  const hasBar = !!app.querySelector(".lvlbar");
+  const wantBar = SITE.levels().length > 1;
+  const hadHint = !!app.querySelector(".rp-hint");
+  const wantHint = !SITE.racePicked();
+  if (lvl === LEVEL && race === RACE && hasBar === wantBar && hadHint === wantHint) return;
+  useLevel(lvl, race);
+  renderAll();
+  if (state.savedAt) track("state", progressSummary());
+});
+
+app.addEventListener("click", (e) => {
+  const coord = e.target.closest(".coord");
+  if (coord) { copyWay(coord.getAttribute("data-way")); return; }
+  const reset = e.target.closest("#reset-btn");
+  if (reset) onReset(reset);
+});
+
+window.addEventListener("storage", (e) => {
+  if (e.key !== STORE_KEY) return;
+  const next = readState();
+  state.done = next.done;
+  state.spec = next.spec;
+  state.savedAt = next.savedAt;
+  renderAll();
+});
+
+if (/^#[A-Za-z0-9._~-]+$/.test(location.hash)) {
+  const target = document.getElementById(location.hash.slice(1));
+  if (target) requestAnimationFrame(() => target.scrollIntoView());
+}
+
+})();
+</script>
+</body>
+</html>
