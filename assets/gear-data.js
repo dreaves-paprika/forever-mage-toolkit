@@ -1,4 +1,4 @@
-/* Forever Mage Toolkit: gear data shared by the gear guide, the dungeon planner and the party board.
+/* Mage Forever TL;DR: gear data shared by the gear guide, the dungeon planner and the party board.
    Item stats come from Wowhead's Forever database; see the gear guide's notes and sources. */
 (() => {
 "use strict";
@@ -416,7 +416,7 @@ const WEIGHT = {
 };
 
 /* ---------- enchants and armor kits, per slot ----------
-   Forever raised many Classic enchants, so these are Forever's own values (the same ones the Shaman toolkit
+   Forever raised many Classic enchants, so these are Forever's own values (the same ones the Shaman site
    checked on Wowhead's Forever database in late September 2026). Skill levels are the Classic ones Wowhead still lists.
    An item holds one enchant or one kit, so each slot gets one pick, plus easier or stronger options.
    "how" can differ by faction: { a: Alliance text, h: Horde text }. */

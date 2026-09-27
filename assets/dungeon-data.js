@@ -1,4 +1,4 @@
-/* Forever Mage Toolkit: dungeon data for the planner, for both factions. From Wowhead's Forever dungeon
+/* Mage Forever TL;DR: dungeon data for the planner, for both factions. From Wowhead's Forever dungeon
    quest guide, community loot tables and dungeon guides, checked in late September 2026.
    travel: if = from Ironforge (Gnomes), sw = from Stormwind (Humans and Skyborne), sky = an extra note for Skyborne,
    org = from Orgrimmar (Orcs and Trolls), uc = from Undercity (Undead). Quest fac: "a", "h" or "both". */

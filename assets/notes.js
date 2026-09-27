@@ -1,4 +1,4 @@
-/* Forever Mage Toolkit: "Note to admin", and replies to those notes.
+/* Mage Forever TL;DR: "Note to admin", and replies to those notes.
    Any button with data-note opens a small form that sends the site's admin a note: a better option,
    something that's wrong, or an idea. Buttons can add context with data-note-slot, data-note-label,
    data-note-item, data-note-about and data-note-kind. A page can also set window.mageNoteContext()

@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Toolkit Stats</title>
-<meta name="description" content="Private visit stats for the Forever Mage Toolkit.">
+<title>Site Stats</title>
+<meta name="description" content="Private visit stats for Mage Forever TL;DR.">
 <meta name="theme-color" content="#EDF0F3" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0F141A" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -466,10 +466,10 @@ function signOut(msg) {
 
 /* ---------- sign in ---------- */
 function renderLogin(msg) {
-  document.title = "Toolkit Stats";
+  document.title = "Site Stats";
   app.innerHTML = '<main class="login"><form class="login-card" id="login-form" novalidate>'
-    + '<p class="eyebrow">Forever Mage Toolkit</p>'
-    + "<h1>Toolkit stats</h1>"
+    + '<p class="eyebrow">Mage Forever TL;DR</p>'
+    + "<h1>Site stats</h1>"
     + "<p>Enter the admin passphrase you saved in Vercel as <code>ADMIN_KEY</code>.</p>"
     + '<input type="text" name="username" value="admin" autocomplete="username" hidden>'
     + '<label for="key">Passphrase</label>'
@@ -512,7 +512,7 @@ async function signIn(form) {
 const ICON_REFRESH = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.2 6.2A5.4 5.4 0 1 0 13.4 10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M13.6 2.6v3.8H9.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 function topHTML() {
-  return '<header class="top"><div><p class="eyebrow">Forever Mage Toolkit</p><h1>Toolkit stats</h1>'
+  return '<header class="top"><div><p class="eyebrow">Mage Forever TL;DR</p><h1>Site stats</h1>'
     + '<p class="updated" id="updated" role="status" aria-live="polite">Updated ' + esc(clock.format(S.loadedAt)) + "</p></div>"
     + '<div class="actions"><button class="btn" type="button" id="refresh">' + ICON_REFRESH + "Refresh</button>"
     + '<a class="btn" href="/" target="_blank" rel="noopener">View site</a>'
@@ -901,7 +901,7 @@ function renderDashboard() {
   const focusId = document.activeElement && document.activeElement.id;
   const list = rows();
   const fresh = ((S.data && S.data.notes) || []).filter((nt) => nt.status === "new").length;
-  document.title = (fresh ? "(" + fresh + ") " : "") + "Toolkit Stats";
+  document.title = (fresh ? "(" + fresh + ") " : "") + "Site Stats";
   app.innerHTML = '<main class="wrap">' + topHTML() + capCardHTML() + notesCardHTML(list) + tilesHTML(list)
     + '<div class="duo">' + chartCardHTML() + feedCardHTML(list) + "</div>"
     + visitorsCardHTML(list)
@@ -916,7 +916,7 @@ function renderDashboard() {
 }
 
 function renderDashboardError(text) {
-  app.innerHTML = '<main class="wrap">' + '<header class="top"><div><p class="eyebrow">Forever Mage Toolkit</p><h1>Toolkit stats</h1></div>'
+  app.innerHTML = '<main class="wrap">' + '<header class="top"><div><p class="eyebrow">Mage Forever TL;DR</p><h1>Site stats</h1></div>'
     + '<div class="actions"><button class="btn" type="button" id="refresh">' + ICON_REFRESH + 'Try again</button><button class="btn" type="button" id="signout">Sign out</button></div></header>'
     + '<section class="card error-card"><h2>Couldn’t load the stats</h2><p class="sub">' + esc(text) + "</p></section></main>";
 }
@@ -1134,7 +1134,7 @@ function redrawNotes(focusSel) {
   tmp.innerHTML = notesCardHTML(rows());
   card.replaceWith(tmp.firstElementChild);
   const fresh = S.data.notes.filter((nt) => nt.status === "new").length;
-  document.title = (fresh ? "(" + fresh + ") " : "") + "Toolkit Stats";
+  document.title = (fresh ? "(" + fresh + ") " : "") + "Site Stats";
   if (focusSel) {
     const f = document.querySelector(focusSel);
     if (f) f.focus({ preventScroll: true });
@@ -1254,7 +1254,7 @@ async function copyNotes(ids) {
   const byId = {};
   rows().forEach((r) => { byId[r.id] = r; });
   const list = S.data.notes.filter((nt) => ids.indexOf(nt.id) >= 0);
-  const text = (list.length > 1 ? "Notes from the Forever Mage Toolkit (" + list.length + ")\n\n" : "") + list.map((nt) => noteAsText(nt, byId)).join("\n\n");
+  const text = (list.length > 1 ? "Notes from Mage Forever TL;DR (" + list.length + ")\n\n" : "") + list.map((nt) => noteAsText(nt, byId)).join("\n\n");
   let copied = false;
   try { if (navigator.clipboard && navigator.clipboard.writeText) { await navigator.clipboard.writeText(text); copied = true; } } catch (e) { copied = false; }
   S.copyText = copied ? "" : text;
@@ -1414,7 +1414,7 @@ setInterval(() => {
 /* ---------- boot ---------- */
 S.key = sget("sessionStorage", KEY_STORE) || sget("localStorage", KEY_STORE);
 if (S.key) {
-  app.innerHTML = '<main class="wrap is-loading" aria-busy="true"><header class="top"><div><p class="eyebrow">Forever Mage Toolkit</p><h1>Toolkit stats</h1><p class="updated">Loading…</p></div></header></main>';
+  app.innerHTML = '<main class="wrap is-loading" aria-busy="true"><header class="top"><div><p class="eyebrow">Mage Forever TL;DR</p><h1>Site stats</h1><p class="updated">Loading…</p></div></header></main>';
   load();
 } else {
   renderLogin("");

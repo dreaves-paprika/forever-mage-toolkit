@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mage BiS</title>
 <meta name="description" content="Best-in-slot gear a Mage can get at the WoW Forever beta’s level cap, for Arcane, Fire and Frost and every Alliance and Horde race, with a tracker that saves in your browser.">
-<meta property="og:title" content="Mage BiS · Forever Mage Toolkit">
+<meta property="og:title" content="Mage BiS · Mage Forever TL;DR">
 <meta property="og:description" content="Best-in-slot gear a Mage can get at the WoW Forever beta’s level cap, for Arcane, Fire and Frost and every Alliance and Horde race, with a tracker that saves in your browser.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#EDF0F3" media="(prefers-color-scheme: light)">
@@ -850,7 +850,7 @@ function notesHTML(st) {
 function footerHTML() {
   return '<footer class="foot"><p>Your ticks, build and professions are saved in this browser and don’t sync between devices. Fan-made and not affiliated with Blizzard Entertainment.</p>'
     + (window.mageNoteFooter ? window.mageNoteFooter("Spotted a mistake, or know a better option?") : "")
-    + '<p><a href="/">Toolkit home</a> · <a href="/checklist">Checklist</a> · <a href="/dungeons">Dungeon planner</a> · <a href="/party">Party board</a></p>'
+    + '<p><a href="/">Home</a> · <a href="/checklist">Checklist</a> · <a href="/dungeons">Dungeon planner</a> · <a href="/party">Party board</a></p>'
     + '<div class="whoami" data-whoami></div><h3 class="rail-title">Sources</h3><ul class="sources">'
     + SOURCES.map((s) => '<li><a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name) + "</a> <span>" + esc(s.site) + "</span></li>").join("")
     + "</ul>" + (shared ? "" : '<div class="reset-row"><button type="button" class="reset" id="reset-btn">Clear all ticks</button></div>') + "</footer>";

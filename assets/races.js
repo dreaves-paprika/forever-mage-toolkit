@@ -1,4 +1,4 @@
-/* Forever Mage Toolkit: the race picker every page shows near the top.
+/* Mage Forever TL;DR: the race picker every page shows near the top.
    Load it after site.js. Pages call window.racePickerHTML() when they draw, and any radio named
    "race" (outside a read-only shared view) switches the race for every page on this site. */
 (function () {

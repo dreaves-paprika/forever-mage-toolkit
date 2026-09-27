@@ -1,6 +1,6 @@
-# Forever Mage Toolkit
+# Mage Forever TL;DR
 
-Small tools for a Mage in the WoW Forever beta, for every race that can be one:
+A cheat sheet for Mages in the WoW Forever beta, for every race that can be one:
 
 - **Alliance:** Human, Gnome and Skyborne (High Order).
 - **Horde:** Orc (new for mages in Forever), Undead and Troll.
@@ -14,7 +14,7 @@ Every page has a race picker near the top. The pick is saved in the browser and 
 
 Each page is a single self-contained HTML file. Progress (race, ticks, build, professions, dungeons done) is saved in the visitor's own browser with `localStorage`, so every friend gets their own tracker. The gear guide and the dungeon planner share the same "have it" ticks.
 
-There's also a private **stats page** (`/admin`) for the site owner. It shows who uses the toolkit, which races and builds they picked and how far along they are, holds the level cap switch, and collects notes visitors send.
+There's also a private **stats page** (`/admin`) for the site owner. It shows who uses the site, which races and builds they picked and how far along they are, holds the level cap switch, and collects notes visitors send.
 
 ## Level 20 and level 30
 
@@ -70,7 +70,7 @@ vercel.json             clean URLs and headers
 
 Each page has a note explaining this, a box for adding a name, and a **Don't count me** link. That link removes the visitor's record, takes them off the party board and stops counting that browser.
 
-Data lives in an Upstash Redis database connected through the Vercel Marketplace. Daily activity is kept for 120 days. Every key this site writes starts with `mage:`, so it can share a database with the Shaman toolkit without either site seeing the other's visitors, notes or level cap.
+Data lives in an Upstash Redis database connected through the Vercel Marketplace. Daily activity is kept for 120 days. Every key this site writes starts with `mage:`, so it can share a database with the Shaman site without either site seeing the other's visitors, notes or level cap.
 
 Vercel Web Analytics also runs on the public pages for aggregate page views.
 
@@ -99,7 +99,7 @@ Then open http://localhost:8000. The functions need `vercel dev` and the environ
 
 1. In Vercel, choose **Add New → Project** and import this repository.
 2. Leave **Framework Preset** on **Other**, with no build command and the root directory as the output.
-3. Connect an Upstash Redis database under **Storage** (a new one, or the Shaman toolkit's), and add `ADMIN_KEY`.
+3. Connect an Upstash Redis database under **Storage** (a new one, or the Shaman site's), and add `ADMIN_KEY`.
 4. Deploy. Every push to `main` redeploys automatically.
 
 Data reflects the WoW Forever beta as of late September 2026 and can change before launch. Fan-made; not affiliated with Blizzard Entertainment.

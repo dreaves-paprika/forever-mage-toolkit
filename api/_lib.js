@@ -3,7 +3,7 @@ const crypto = require("crypto");
 
 // Day boundaries for the stats (visits "today", the 30-day chart).
 const TZ = process.env.STATS_TZ || "America/Chicago";
-// Every database key gets this prefix, so this site can share an Upstash database with the Shaman toolkit.
+// Every database key gets this prefix, so this site can share an Upstash database with the Shaman site.
 const KEY_PREFIX = process.env.KEY_PREFIX != null ? String(process.env.KEY_PREFIX) : "mage:";
 const PAGES = { home: "home page", checklist: "checklist", gear: "gear guide", dungeons: "dungeon planner", party: "party board" };
 const SPECS = { arcane: "Arcane", fire: "Fire", frost: "Frost" };

@@ -1,4 +1,4 @@
-/* Forever Mage Toolkit: simple first-party visit stats and the optional name box.
+/* Mage Forever TL;DR: simple first-party visit stats and the optional name box.
    Sends: a random browser ID, the page opened, a short progress summary and, if given, a name.
    The server adds rough location and device type. No cookies, and no IP addresses are stored. */
 (function () {

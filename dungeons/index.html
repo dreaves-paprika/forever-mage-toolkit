@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dungeon Planner</title>
 <meta name="description" content="Which dungeons a Mage should run at the WoW Forever beta’s level cap, in order, for every Alliance and Horde race, with the quests to grab first and the upgrades each one holds for your build.">
-<meta property="og:title" content="Dungeon Planner · Forever Mage Toolkit">
+<meta property="og:title" content="Dungeon Planner · Mage Forever TL;DR">
 <meta property="og:description" content="Which dungeons to run at the WoW Forever beta’s level cap, in order, with the quests to grab first and the upgrades for your build.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#EDF0F3" media="(prefers-color-scheme: light)">
@@ -443,7 +443,7 @@ function render() {
     + levelbarHTML(lvl)
     + (window.racePickerHTML ? window.racePickerHTML({ race: race() }) : "")
     + '<p class="lede">Which dungeons to run at the level ' + lvl + " cap, in order, for your build and faction. Ticking an item here ticks it in the gear guide too.</p>"
-    + '<p class="links"><a href="/gear">Gear guide</a> · <a href="/checklist">Checklist</a> · <a href="/party">Party board</a> · <a href="/">Toolkit home</a></p></header>'
+    + '<p class="links"><a href="/gear">Gear guide</a> · <a href="/checklist">Checklist</a> · <a href="/party">Party board</a> · <a href="/">Home</a></p></header>'
     + buildsHTML()
     + '<div class="summary" role="status" aria-live="polite"><strong>' + need + "</strong><span>best-in-slot pieces still to get from these dungeons, out of " + total + ".</span></div>"
     + '<ol class="runs">' + steps.map((s, i) => runHTML(s, i, lvl, ups)).join("") + "</ol>"

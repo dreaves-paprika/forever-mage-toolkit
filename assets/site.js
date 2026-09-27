@@ -1,4 +1,4 @@
-/* Forever Mage Toolkit: which level cap is live, which level and race this visitor is viewing,
+/* Mage Forever TL;DR: which level cap is live, which level and race this visitor is viewing,
    and small storage helpers shared by every page. Load it before the page's own script. */
 (function () {
   "use strict";
