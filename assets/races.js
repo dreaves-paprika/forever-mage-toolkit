@@ -78,8 +78,7 @@
       + "</div>";
   };
 
-  document.addEventListener("change", function (e) {
-    var t = e.target;
+  function pickRace(t) {
     if (!t || t.name !== "race" || t.disabled || !S.RACES[t.value]) return;
     var v = t.value;
     // Record the pick for the owner's stats. Pages with progress send a fuller summary right after.
@@ -88,5 +87,16 @@
     // Pages redraw when the race changes, so put focus back on the new choice.
     var again = document.querySelector('input[name="race"][value="' + v + '"]:not([disabled])');
     if (again && again !== document.activeElement) { try { again.focus({ preventScroll: true }); } catch (err) { again.focus(); } }
+  }
+  document.addEventListener("change", function (e) { pickRace(e.target); });
+  // The default race's radio renders pre-checked before anyone has picked (see racePickerHTML
+  // above), so clicking that same option doesn't change its checked state and never fires
+  // "change" natively. Without this, a visitor happy with the default could never dismiss the
+  // "Showing X" hint. Catch that one case here; every other pick still goes through "change"
+  // (including keyboard arrow-key selection, which never fires "click").
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    if (!t || t.name !== "race" || t.tagName !== "INPUT" || t.disabled || !S.RACES[t.value]) return;
+    if (!S.racePicked() && t.value === S.race()) pickRace(t);
   });
 })();
